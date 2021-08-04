@@ -7722,7 +7722,7 @@ body {
     body .flechaSubir {
       position: fixed;
       z-index: 10;
-      top: 585px;
+      top: 510px;
       right: 15px; } }
   @media only screen and (min-width: 1024px) {
     body .flechaSubir {
