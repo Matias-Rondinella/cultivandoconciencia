@@ -1,0 +1,26 @@
+$vista:desktop;
+
+@if $vista == desktop {
+    @media only screen and (min-width: 1024px){
+        h1{font-size: 40px;
+        font-family: 'Poppins', sans-serif;}
+        h2{font-size: 55px;}
+        h3{font-size: 25px;}
+}
+}
+    @else if $vista == mobile {
+    @media only screen and (max-width:767px){
+            h1{font-size: 25px;
+            font-family: 'Poppins', sans-serif;}
+            h2{font-size: 22px;}
+            h3{font-size: 20px;}
+    }
+}
+    @else{
+        h1{font-size: 20px;}
+        h2{font-size: 25px;}
+        h3{font-size: 15px;}
+}
+
+
+

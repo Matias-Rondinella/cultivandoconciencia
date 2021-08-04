@@ -1,0 +1,101 @@
+@media only screen and (min-width:1024px){
+    .footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        background: $header;
+        .footer__redes--position{
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            height: 100px;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            right: 121px;
+            h3{
+                font-size: 30px;
+                color: $blanco;
+            }
+            img.footer__img--size{
+                width: 80%;
+            }
+            .footer__enlace--animation{
+                transition: 2s;
+                &:hover{
+                    transform:rotate(360deg);
+                }
+            }
+        }
+            .footer__enlace--decoration{
+                text-decoration: none;
+                .footer__masInfo--font{
+                    font-size: 20px;
+                    color: $negro;
+                    background: $header;
+                    &:hover{
+                        background: $cardsBg;
+                        color: $blanco;
+                    }
+                    padding: 20px;
+                    border-radius: 230px;
+                    
+
+                }
+            }
+            
+    }
+    
+}
+
+@media only screen and (max-width:767px){
+    .footer{
+        
+        background: $header;
+        .footer__redes--position{
+            display: flex;
+            width: 100%;
+            height: 100px;
+            position: relative;
+            align-items: center;
+            h3{
+                font-size: 20px;
+                color: blueviolet;
+                text-align: center;
+            }
+            .footer__imgIg--size{
+                width: 45%;
+                margin-left: 20px;
+            }
+            .footer__imgYt--size{
+                width: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        .footer__enlace--decoration{
+            text-decoration: none;
+            .footer__masInfo--font{
+                font-size: 15px;
+                color: $negro;
+                background: linear-gradient(
+                    45deg
+                    , #ffc107, #f8f9fa);
+                &:hover{
+                    background: $cardsBg;
+                    color: $blanco;
+                }
+                padding: 10px;
+                border-radius: 180px;
+                width:27%;
+                margin: 0;
+                position: relative;
+                left: 135px;
+                bottom: 10px;}
+        }
+                   
+    }
+    
+}

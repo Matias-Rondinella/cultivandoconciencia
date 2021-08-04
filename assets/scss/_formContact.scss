@@ -1,0 +1,74 @@
+.form--boxModel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: 767px){
+        padding-bottom: 35px;
+        padding: 25px;
+    }
+   
+}
+
+.form__input--boxModel{
+    width: 50%;
+    font-size: initial;
+    @media only screen and (max-width: 767px){
+        overflow: visible;
+        width: 100%;
+        font-size: initial;
+    }    
+}
+
+.form__fieldset--flex{
+    @media only screen and (min-width:1024px){
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
+    
+
+}
+
+.form__legend--font{
+    text-align: center;
+    @media only screen and (max-width: 767px){
+        text-align: center;
+    }
+    
+}
+
+.form__input--boxModel{
+    width: 50%;
+    @media only screen and (max-width: 767px){
+        overflow: visible;
+        width: 100%;
+    }    
+}
+
+.form__buttom--flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    @media only screen and (max-width:767px){
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.form__input--color{
+    background: $amarillo;
+    width: 50%;
+    height: 30px;
+}
+
+.iframe__map--boxModel{
+    border: 5px yellow solid;
+    height: 507px;
+    @media only screen and (max-width: 767px){
+        width: 320px;
+        height: 320px;
+    }
+}

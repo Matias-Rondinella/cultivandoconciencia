@@ -1,0 +1,52 @@
+/* Esta es la seccion de texto principal y se repite en todas las paginas */
+
+@media only screen and (min-width:1024px){
+    .article{
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 27%;
+        padding-right: 27%;
+        background: $bgArticle;
+        margin-top: 25px;
+        align-items: center;
+        justify-content: space-evenly;
+        .article__h2--font{
+            font-size: 60px;
+            color: $h1Article;
+    
+        }
+        .article__txt--font{
+            font-size: 28px;
+            text-align: center;
+    
+        }
+    
+    }
+
+}
+@media only screen and (max-width: 767px){
+    .article{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 15px;
+        background: $bgArticle;
+        align-items: center;
+        .article__h2--font{
+            font-size: 25px;
+            color: $h1Article;
+            margin-top: 15px;
+            margin-bottom: 15px;
+    
+        }
+        .article__txt--font{
+            font-size: 15px;
+            text-align: center;
+    
+        }
+    
+    }
+
+}

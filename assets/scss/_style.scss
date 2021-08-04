@@ -1,0 +1,61 @@
+@import "menu";
+@import "articleTxt";
+@import "novedades";
+@import "footer";
+@import "colores";
+@import "grillaSem";
+@import "grillaAgro";
+@import "iframeCom";
+@import "grillaCom";
+@import "formContact";
+@import "bgs";
+@import "titulos";
+
+* {
+    margin: 0%;
+    padding: 0; }
+  
+html {
+    font-size: 62.5%; }
+
+.disNoMob{
+    @media only screen and (max-width: 767px){
+        display: none;
+    }
+}
+
+  
+body{
+    background: $bgG;
+    @media only screen and (max-width:767px){
+        .flechaSubir{
+            position: fixed;
+            z-index: 10;
+            top: 585px;
+            right: 15px;
+            // width: 50%;
+            }
+        }
+        @media only screen and (min-width: 1024px){
+        .flechaSubir{
+            left: 1800px;
+            top: 900px;
+            position: fixed;
+            z-index: 10;
+            width: 50%;
+        }
+    }
+    
+}
+
+.grilla--flex{
+    @media only screen and (max-width:767px){
+        padding: 48px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+}
+
+
+

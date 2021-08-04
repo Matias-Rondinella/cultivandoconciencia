@@ -1,0 +1,36 @@
+.iframeCom__pad--boxModel{
+    padding: 30px;
+    @media only screen and (max-width: 767px){
+        padding: 0px;
+    }
+
+}
+
+.iframeCom__bg--color{
+    background: $bgArticle2;
+}
+
+.iframeCom__display--flex{
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: 767px){
+        height: 315px;
+    }
+
+}
+
+.iframeCom__display--boxModel{
+    height: 540px;
+    // padding-top: 20px;
+    @media only screen and (max-width:767px){
+        height: 300px;
+    }
+
+}
+
+.iframe__screen--boxModel{
+    width: 1500px;
+    border: 10px solid $verde;
+
+}
+

@@ -1,0 +1,123 @@
+@import "colores";
+
+@media only screen and (min-width: 1024px){
+    .menu{
+        background: $header;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        .header__logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            a{width: 50px*2;
+            padding: 15px;}
+            .header__logo--size{
+                width: 100%;
+                background: $blanco;
+                border-radius: 100px;
+                &:hover{
+                    background: darkcyan;
+                }
+            }
+            .h1__logo--color a{
+                color: $blanco;
+                text-decoration: none;
+                &:hover{
+                    color: $amarillo;
+                }
+            }
+            .h1__logo--font{
+                font-size: 38px;
+                width: 450px;
+                position: relative;
+                right: 20px;
+                
+            }
+        }
+        .navbar{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            .navbar__li--padding{
+                padding-right: 50px;
+                .navbar__enlace--color{
+                    color: $negro;
+                    &:hover{
+                    color: $amarillo;
+    
+                    }
+    
+                }
+                .navbar__enlace--font{
+                    font-size: 15px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: font-size 2s;
+                    &:hover{
+                        font-size: 30px;
+                    }
+                }
+        
+            }
+            
+        }
+    }
+
+}
+ @media only screen and (max-width:767px){
+    .menu{
+        background: $header;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        .header__logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .header__logo--size{
+                width: 80%;
+            }
+            .h1__logo--color a{
+                color: $blanco;
+                text-decoration: none;
+                &:hover{
+                    color: $amarillo;
+                }
+            }
+            .h1__logo--font{
+                font-size:25px;
+                position: relative;
+                right: 27px;
+            }
+        }
+        .navbar{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            .navbar__button--size{
+                width: 100%;
+                background: $verde;
+            }
+            .navbar__li--padding{
+                padding-right: 0;
+                .navbar__enlace--color{
+                    color: $negro;
+                    &:hover{
+                    color: $amarillo;
+    
+                    }
+    
+                }
+                .navbar__enlace--font{
+                    font-size: 12px;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+        
+            }
+            
+        }
+    }
+
+ }
