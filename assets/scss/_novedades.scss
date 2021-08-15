@@ -12,6 +12,11 @@
             height: 40%;
             margin: 50px;
             padding: 20px;
+            &:hover{
+                width: 50%;
+                transition: 0.5s;
+            }
+            
         }
         .cards__bg--color{
             background: $tituloNovBg;

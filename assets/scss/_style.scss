@@ -24,25 +24,33 @@ html {
     }
 }
 
+
+
   
 body{
     background: $bgG;
     @media only screen and (max-width:767px){
         .flechaSubir{
-            position: fixed;
+            position: sticky;
             z-index: 10;
             top: 585px;
             right: 15px;
             // width: 50%;
+            img{
+                position: absolute;
+            }
             }
         }
         @media only screen and (min-width: 1024px){
         .flechaSubir{
             left: 1800px;
             top: 900px;
-            position: fixed;
+            position: sticky;
             z-index: 10;
-            width: 50%;
+            // width: 50%;
+            img{
+                position: absolute;
+            }
         }
     }
     
@@ -59,3 +67,27 @@ body{
 
 
 
+@mixin button-variant(
+  $background,
+  $border,
+  $color: color-contrast($background),
+  $hover-background: if($color == $color-contrast-light, shade-color($background, $btn-hover-bg-shade-amount), tint-color($background, $btn-hover-bg-tint-amount)),
+  $hover-border: if($color == $color-contrast-light, shade-color($border, $btn-hover-border-shade-amount), tint-color($border, $btn-hover-border-tint-amount)),
+  $hover-color: color-contrast($hover-background),
+  $active-background: if($color == $color-contrast-light, shade-color($background, $btn-active-bg-shade-amount), tint-color($background, $btn-active-bg-tint-amount)),
+  $active-border: if($color == $color-contrast-light, shade-color($border, $btn-active-border-shade-amount), tint-color($border, $btn-active-border-tint-amount)),
+  $active-color: color-contrast($active-background),
+  $disabled-background: $background,
+  $disabled-border: $border,
+  $disabled-color: color-contrast($disabled-background)
+) {
+  color: $color;
+  @include gradient-bg($background);
+  border-color: $border;
+  @include box-shadow($btn-box-shadow);
+
+  &:hover {
+    color: $hover-color;
+    @include gradient-bg($hover-background);
+    border-color: $hover-border;
+  }}

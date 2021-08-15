@@ -14,5 +14,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matias-Rondinella/cultivandoconciencia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Matias-Rondinella/cultivandoconciencia/issues"
+  },
+  "homepage": "https://github.com/Matias-Rondinella/cultivandoconciencia#readme",
   "description": ""
 }
