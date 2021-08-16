@@ -4,27 +4,37 @@
     .article{
         height: 350px;
         display: flex;
-        flex-direction: column;
-        padding-left: 27%;
-        padding-right: 27%;
+        flex-direction: row;
+        // padding-left: 27%;
+        // padding-right: 27%;
         background: $bgArticle;
         margin-top: 25px;
         align-items: center;
         justify-content: space-evenly;
-        .article__h2--font{
-            font-size: 60px;
-            color: $h1Article;
-    
+        .article__div{
+            position: relative;
+            right: 60px;
+        
+            .article__h2--font{
+                font-size: 60px;
+                color: $h1Article;
+                text-align: end;
+                padding-right: 50px;
+        
+            }
+            .article__txt--font{
+                font-size: 28px;
+                text-align: center;
+                padding-right: 50px;
+                padding-top: 50px;
+            }
+        
         }
-        .article__txt--font{
-            font-size: 28px;
-            text-align: center;
-    
-        }
-    
     }
-
+    
 }
+
+
 @media only screen and (max-width: 767px){
     .article{
         display: flex;

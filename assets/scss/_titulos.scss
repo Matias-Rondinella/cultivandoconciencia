@@ -6,7 +6,16 @@ $vista:desktop;
         font-family: 'Poppins', sans-serif;}
         h2{font-size: 55px;}
         h3{font-size: 25px;}
-}
+        h5{font-size: 75px;
+            position: relative;
+            bottom: 50px;
+            opacity: 0.6;}
+        .pSlider{
+            font-size: 30px;
+            position: relative;
+            bottom: 30px;
+        }    
+    }
 }
     @else if $vista == mobile {
     @media only screen and (max-width:767px){

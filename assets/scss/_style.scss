@@ -50,11 +50,24 @@ body{
             // width: 50%;
             img{
                 position: absolute;
+                animation: expand .8s cubic-bezier(0.43, 0.28, 0.24, 0.35) forwards .5s;
+                animation-iteration-count: infinite;
+                animation-duration: 1s;
+                animation-direction: alternate-reverse;
+                @keyframes expand {
+                    0% {
+                        transform: translateX(10px);
+                    }
+                    100% {
+                        transform: translateX(0px);
+                    }
+                }
             }
         }
+                  
     }
-    
 }
+
 
 .grilla--flex{
     @media only screen and (max-width:767px){

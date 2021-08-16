@@ -388,6 +388,15 @@ mark,
   max-width: 100%;
   height: auto; }
 
+.img-fluid__agricultor {
+  position: relative;
+  left: 40px;
+  width: 600px; }
+  .img-fluid__agricultor:hover {
+    width: 585px;
+    right: 5px;
+    transition: 1s; }
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -2301,7 +2310,7 @@ h1 {
 
 @keyframes slideUp {
   0% {
-    transform: translateY(300px); }
+    transform: translateY(2000px); }
   100% {
     transform: translateY(0px); } }
 
@@ -7386,19 +7395,24 @@ a.text-dark:hover, a.text-dark:focus {
   .article {
     height: 350px;
     display: flex;
-    flex-direction: column;
-    padding-left: 27%;
-    padding-right: 27%;
+    flex-direction: row;
     background: linear-gradient(45deg, #007bff, #28a745);
     margin-top: 25px;
     align-items: center;
     justify-content: space-evenly; }
-    .article .article__h2--font {
-      font-size: 60px;
-      color: #e9ecef; }
-    .article .article__txt--font {
-      font-size: 28px;
-      text-align: center; } }
+    .article .article__div {
+      position: relative;
+      right: 60px; }
+      .article .article__div .article__h2--font {
+        font-size: 60px;
+        color: #e9ecef;
+        text-align: end;
+        padding-right: 50px; }
+      .article .article__div .article__txt--font {
+        font-size: 28px;
+        text-align: center;
+        padding-right: 50px;
+        padding-top: 50px; } }
 
 @media only screen and (max-width: 767px) {
   .article {
@@ -7434,7 +7448,7 @@ a.text-dark:hover, a.text-dark:focus {
       padding: 20px; }
       .cardsFlex .cardsFlex__card--size:hover {
         width: 50%;
-        transition: 0.5s; }
+        transition: 1s; }
     .cardsFlex .cards__bg--color {
       background: #feca5f; }
     .cardsFlex p {
@@ -7815,7 +7829,16 @@ a.text-dark:hover, a.text-dark:focus {
   h2 {
     font-size: 55px; }
   h3 {
-    font-size: 25px; } }
+    font-size: 25px; }
+  h5 {
+    font-size: 75px;
+    position: relative;
+    bottom: 50px;
+    opacity: 0.6; }
+  .pSlider {
+    font-size: 30px;
+    position: relative;
+    bottom: 30px; } }
 
 * {
   margin: 0%;
@@ -7845,7 +7868,16 @@ body {
       position: sticky;
       z-index: 10; }
       body .flechaSubir img {
-        position: absolute; } }
+        position: absolute;
+        animation: expand 0.8s cubic-bezier(0.43, 0.28, 0.24, 0.35) forwards 0.5s;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        animation-direction: alternate-reverse; }
+    @keyframes expand {
+      0% {
+        transform: translateX(10px); }
+      100% {
+        transform: translateX(0px); } } }
 
 @media only screen and (max-width: 767px) {
   .grilla--flex {

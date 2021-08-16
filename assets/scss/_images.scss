@@ -8,6 +8,17 @@
 .img-fluid {
   @include img-fluid();
 }
+.img-fluid__agricultor{
+  position: relative;
+  left: 40px;
+  width: 600px;
+  &:hover{
+    width: 585px;
+    right: 5px;
+    transition: 1s;
+  }
+
+}
 
 
 // Image thumbnails
