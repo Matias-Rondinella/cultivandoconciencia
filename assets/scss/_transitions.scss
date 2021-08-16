@@ -1,3 +1,5 @@
+@import "colores";
+
 .fade {
   @include transition($transition-fade);
 
@@ -144,7 +146,27 @@ h1 {
     transform: translateX(0px);
   }
 }
+@keyframes color {
+  0% {
+    color: rgb(80, 255, 182);
+  }
+  // 33%{
+    // color: rgb(221, 180, 0);
+  // }
+  50% {
+    color: $amarillo;
+  }
+  100%{
+    color:rgb(80, 255, 182);
+  }
+}
 
 .bodyTransition{
   animation: slideUp .8s ease forwards .5s;
 }
+.h2Novedades {
+  animation: color 2s ease-in .5s;
+  color: whitesmoke; 
+  // transition: 5s;
+  // color: red;
+  animation-iteration-count: infinite;}
