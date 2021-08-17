@@ -147,18 +147,18 @@ h1 {
   }
 }
 @keyframes color {
-  0% {
-    color: rgb(80, 255, 182);
-  }
+  // 0% {
+  //   color: rgb(80, 255, 182);
+  // }
   // 33%{
     // color: rgb(221, 180, 0);
   // }
   50% {
-    color: $amarillo;
+    color: $blanco;
   }
-  100%{
-    color:rgb(80, 255, 182);
-  }
+  // 100%{
+  //   color:rgb(80, 255, 182);
+  // }
 }
 
 .bodyTransition{
@@ -166,7 +166,7 @@ h1 {
 }
 .h2Novedades {
   animation: color 2s ease-in .5s;
-  color: whitesmoke; 
+  color: #9c43f0b0; 
   // transition: 5s;
   // color: red;
   animation-iteration-count: infinite;}

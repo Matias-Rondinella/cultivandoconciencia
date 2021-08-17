@@ -2321,19 +2321,15 @@ h1 {
     transform: translateX(0px); } }
 
 @keyframes color {
-  0% {
-    color: #50ffb6; }
   50% {
-    color: #f5f376; }
-  100% {
-    color: #50ffb6; } }
+    color: whitesmoke; } }
 
 .bodyTransition {
   animation: slideUp .8s ease forwards .5s; }
 
 .h2Novedades {
   animation: color 2s ease-in .5s;
-  color: whitesmoke;
+  color: #9c43f0b0;
   animation-iteration-count: infinite; }
 
 .dropup,
@@ -7841,8 +7837,7 @@ a.text-dark:hover, a.text-dark:focus {
   h2 {
     font-size: 55px; }
   .h2Novedades {
-    text-align: center;
-    font-size: 30px; }
+    text-align: center; }
   h3 {
     font-size: 25px; }
   h5 {
@@ -7981,19 +7976,15 @@ h1 {
     transform: translateX(0px); } }
 
 @keyframes color {
-  0% {
-    color: #50ffb6; }
   50% {
-    color: #f5f376; }
-  100% {
-    color: #50ffb6; } }
+    color: whitesmoke; } }
 
 .bodyTransition {
   animation: slideUp .8s ease forwards .5s; }
 
 .h2Novedades {
   animation: color 2s ease-in .5s;
-  color: whitesmoke;
+  color: #9c43f0b0;
   animation-iteration-count: infinite; }
 
 * {
