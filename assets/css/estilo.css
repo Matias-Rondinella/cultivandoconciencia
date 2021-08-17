@@ -7409,8 +7409,7 @@ a.text-dark:hover, a.text-dark:focus {
     height: 350px;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(45deg, #007bff, #28a745);
-    margin-top: 35px;
+    background: #d24429f2;
     align-items: center;
     justify-content: space-evenly; }
     .article .article__div {
@@ -7423,9 +7422,10 @@ a.text-dark:hover, a.text-dark:focus {
         padding-right: 50px; }
       .article .article__div .article__txt--font {
         font-size: 28px;
-        text-align: center;
+        text-align: end;
         padding-right: 50px;
-        padding-top: 50px; } }
+        padding-top: 50px;
+        color: whitesmoke; } }
 
 @media only screen and (max-width: 767px) {
   .article {
@@ -7434,7 +7434,6 @@ a.text-dark:hover, a.text-dark:focus {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 15px;
-    background: linear-gradient(45deg, #007bff, #28a745);
     align-items: center; }
     .article .article__h2--font {
       font-size: 25px;
@@ -8025,6 +8024,7 @@ body {
       position: sticky;
       z-index: 10; }
       body .flechaSubir img {
+        /*estas animaciones mueven d un lado a otro el objeto que las tenga*/
         position: absolute;
         animation: expand 0.8s cubic-bezier(0.43, 0.28, 0.24, 0.35) forwards 0.5s;
         animation-iteration-count: infinite;

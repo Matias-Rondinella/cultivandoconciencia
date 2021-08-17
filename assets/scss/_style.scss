@@ -49,7 +49,7 @@ body{
             position: sticky;
             z-index: 10;
             // width: 50%;
-            img{
+            img{ /*estas animaciones mueven d un lado a otro el objeto que las tenga*/
                 position: absolute;
                 animation: expand .8s cubic-bezier(0.43, 0.28, 0.24, 0.35) forwards .5s;
                 animation-iteration-count: infinite;

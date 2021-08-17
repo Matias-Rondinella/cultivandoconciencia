@@ -1,14 +1,16 @@
 /* Esta es la seccion de texto principal y se repite en todas las paginas */
+@import "colores";
 
 @media only screen and (min-width:1024px){
+    
     .article{
         height: 350px;
         display: flex;
         flex-direction: row;
         // padding-left: 27%;
         // padding-right: 27%;
-        background: $bgArticle;
-        margin-top: 35px;
+        background: $bgG;
+        // margin-top: 35px;
         align-items: center;
         justify-content: space-evenly;
         .article__div{
@@ -24,9 +26,10 @@
             }
             .article__txt--font{
                 font-size: 28px;
-                text-align: center;
+                text-align: end;
                 padding-right: 50px;
                 padding-top: 50px;
+                color: $blanco;
             }
         
         }
@@ -42,7 +45,7 @@
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 15px;
-        background: $bgArticle;
+        // background: $bgArticle;
         align-items: center;
         .article__h2--font{
             font-size: 25px;
