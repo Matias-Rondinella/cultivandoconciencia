@@ -7,6 +7,7 @@ $vista:desktop;
         h2{font-size: 55px;}
         .h2Novedades {
             text-align: center;
+            background-image: url(../imagenes/campo.png);
             // font-size: 30px;
             }
         h3{font-size: 25px;}
@@ -14,13 +15,24 @@ $vista:desktop;
             position: relative;
             bottom: 50px;
             opacity: 0.6;}
+        p{
+            font-family: 'Mali', cursive;
+            font-size: 35px;
+        }
         .pSlider{
             font-size: 30px;
             position: relative;
             bottom: 30px;
-        }    
-    }
+        }
+        .slider2__txt{
+            font-size: 40px;
+            color: #f8f9fa;
+            text-align: center;
+        }
+         
+    }    
 }
+
     @else if $vista == mobile {
     @media only screen and (max-width:767px){
             h1{font-size: 25px;

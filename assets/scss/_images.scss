@@ -9,12 +9,13 @@
   @include img-fluid();
 }
 .img-fluid__agricultor{
-  position: relative;
-  left: 40px;
-  width: 600px;
+    position: relative;
+    left: 60px;
+    width: 525px;
+    top: 84px;
   &:hover{
     width: 585px;
-    right: 5px;
+    right: 10px;
     transition: 1s;
   }
 

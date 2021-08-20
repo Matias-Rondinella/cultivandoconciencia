@@ -23,11 +23,11 @@
     <link rel="stylesheet" href="assets/css/estilo.css">
 </head>
 <body class="bodyTransition">
-    <a href="" class="flechaSubir"><img src="assets/imagenes/flecha-hacia-arriba.png" alt="Subir" style="width: 50px;" class="img__bodyTransition"></a>
+    <a href="#flechaArriba" class="flechaSubir"><img src="assets/imagenes/flecha-hacia-arriba.png" alt="Subir" style="width: 50px;" class="img__bodyTransition"></a>
     <div class="container-fluid" style="padding: 0px;overflow: hidden;">
         <!-- <a href="" class="flechaSubir"><img src="assets/imagenes/flecha-hacia-arriba.png" alt="Subir" style="width: 50px;"></a> -->
         <!-- Comienzo de Header -->
-        <div class="row">
+        <div class="row" id="flechaArriba">
             <div class="col-lg-12 col-xs-12">
                 <header class="menu">
                     <div class="header__logo">
@@ -62,20 +62,6 @@
             </div>
         </div>
         <!--Cierre de Header-->
-        <!-- Comienzo Seccion Texto-->
-        <!--<div class="row" style="padding-bottom: 25px;">
-            <div>
-                <section>
-                    <article class="article col-lg-12 col-xs-12">
-                        <h2 class="article__h2--font fontTitlesMob">Comenzando por Casa</h2>
-                        <p class="article__txt--font">Cultivando Conciencia es una organización social que, a través de la agroecología, lleva a tomar conciencia de nuestros hábitos cotidianos y el impacto que generan en el lugar que habitamos.
-                        </p>
-                    </article>
-                    <img src="assets/imagenes/a1 (1).png" alt="agricultor" class="img-fluid bodyTransition col-lg-2 col-xs-12">
-                </section>
-            </div>
-        </div>
-        <!-- Fin Seccion Texto -->
         <!--Inicio Slider-->
         <div class="row slider__bg--mobile slider--padTop">
           <div class="col-lg-12 col-xs-12">
@@ -85,7 +71,7 @@
                   <div class="carousel-item active">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Agroecologia en el Hogar</h5>
-                      <p class="pSlider">Compartimos nuestra escencia, florecemos desde adentro</p>
+                      <p class="pSlider">"Compartimos nuestra escencia, florecemos desde adentro"</p>
                       <a href="paginas/agroecologia.html"><button type="button" class="btn btn-primary btn-lg">Conocé Más</button></a>
                     </div>
                     <img src="assets/imagenes/naranjas.jpg" class="d-block w-100" alt="slide1">
@@ -112,25 +98,49 @@
         <!-- Comienzo Seccion Texto-->
         <div class="row">
           <div>
-              <section style="margin: 140px 0px 110px 0px;">
+              <section>
                   <article class="article">
-                    <img src="assets/imagenes/a1(1).png" alt="agricultor" class="img-fluid__agricultor bodyTransition disNoMob">
+                    <img src="assets/imagenes/farmer1.svg" alt="agricultor" class="img-fluid__agricultor bodyTransition disNoMob">
                     <div class="col-lg-8 col-xs-12 article__div">
                       <h2 class="article__h2--font fontTitlesMob">Comenzando por Casa</h2>
-                      <p class="article__txt--font">Desde Cultivando Conciencia invitamos a compartir costumbres saludables y en armonia con la naturaleza. Siguiendo como ejes principales la Agroecologia y el Hogar, tomamos conciencia del impacto que generan nuestros habitos cotidianos en el lugar que habitamos.</p>              
+                      <p class="article__txt--font">Desde <i><b> Cultivando Conciencia</b></i> invitamos a compartir costumbres saludables y en armonia con la naturaleza. Siguiendo como ejes principales la Agroecologia y el Hogar, tomamos conciencia del impacto que generan nuestros habitos cotidianos en el lugar que habitamos.
+                      </p>      
                     </div>                      
                   </article>
               </section>
           </div>
         </div>
         <!-- Fin Seccion Texto -->
-        <!-- Inicio de Seccion Novedades -->
-        <div>
-            <div class="cardsFlex">
-                <div>
-                  <h2 class="h2Novedades">Novedades</h2>
+        <!-- Comienzo Banner Frases -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="slider2">
+                  <img src="assets/imagenes/iconocompost.svg" alt="compostIcon" class="slider2__img">
+                  <h6 class="slider2__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, quisquam.</h6>
                 </div>
-                <!-- <h2 class="h2Novedades">Novedades</h2> -->
+            </div>
+            <div class="carousel-item">
+              <div>
+                <h6 class="slider2__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, quisquam.</h6>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <h6 class="slider2__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, quisquam.</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cierre Banner Frases -->
+        
+        <!-- Inicio de Seccion Novedades -->        
+        <div>
+          <div>
+            <h2 class="h2Novedades">Novedades</h2>
+          </div>
+            <div class="cardsFlex">
                 <div class="card cardsFlex__card--size cards__bg--color">
                     <a href="paginas/semilla.html"><img src="assets/imagenes/novedades2.jpg"  alt="novedades2" class="img-fluid"></a>
                     <div class="card-body">

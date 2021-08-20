@@ -11,9 +11,10 @@
 @import "bgs";
 @import "titulos";
 @import "transitions";
+@import "slider2";
 
 * {
-    margin: 0%;
+    margin: 0;
     padding: 0; }
   
 html {
@@ -38,7 +39,7 @@ body{
             right: 15px;
             // width: 50%;
             img{
-                position: absolute;
+                position: sticky;
             }
             }
         }
