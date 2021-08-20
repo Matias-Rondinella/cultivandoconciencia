@@ -10,11 +10,11 @@
 }
 .img-fluid__agricultor{
     position: relative;
-    left: 60px;
-    width: 525px;
-    top: 84px;
+    right: 60px;
+    width: 400px;
+    // top: 84px;
   &:hover{
-    width: 585px;
+    width: 415px;
     right: 10px;
     transition: 1s;
   }

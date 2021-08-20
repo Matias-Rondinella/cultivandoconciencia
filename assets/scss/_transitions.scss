@@ -116,7 +116,7 @@ h1 {
     font-size: 40px;
     color: var(--contrast-color);
     margin-bottom: 20px;
-    transform: translateY(100px);
+    transform: translateY(2000px);
     animation: slideUp .8s ease forwards .5s;
 }
 
@@ -163,6 +163,14 @@ h1 {
 
 .bodyTransition{
   animation: slideUp .8s ease forwards .5s;
+  @keyframes slideUp {
+    0% {
+      transform: translateY(2000px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 }
 .h2Novedades {
   animation: color 2s ease-in .5s;
