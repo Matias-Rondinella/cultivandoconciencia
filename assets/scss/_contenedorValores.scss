@@ -1,0 +1,15 @@
+.contenedorValores{
+    padding: 50px 200px 50px 200px;
+    .contenedorValores__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 75px 0px 75px;
+        p{
+         text-align: center;
+         padding: 25px;
+         font-size: 20px;
+        }
+    }
+}

@@ -7842,6 +7842,8 @@ a.text-dark:hover, a.text-dark:focus {
     background-image: url(../imagenes/campo.png); }
   h3 {
     font-size: 25px; }
+  h4 {
+    font-size: 3.5rem; }
   h5 {
     font-size: 75px;
     position: relative;
@@ -7996,7 +7998,7 @@ h1 {
   color: #9c43f0b0;
   animation-iteration-count: infinite; }
 
-@media only scree and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .slider2 {
     display: flex;
     flex-direction: column;
@@ -8009,6 +8011,19 @@ h1 {
       color: #f8f9fa;
       text-align: center;
       padding-bottom: 100px; } }
+
+.contenedorValores {
+  padding: 50px 200px 50px 200px; }
+  .contenedorValores .contenedorValores__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 75px 0px 75px; }
+    .contenedorValores .contenedorValores__card p {
+      text-align: center;
+      padding: 25px;
+      font-size: 20px; }
 
 * {
   margin: 0;
