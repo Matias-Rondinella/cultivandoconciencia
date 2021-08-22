@@ -7341,7 +7341,7 @@ a.text-dark:hover, a.text-dark:focus {
         background: whitesmoke;
         border-radius: 100px; }
         .menu .header__logo .header__logo--size:hover {
-          background: darkcyan; }
+          background: #f5f376; }
       .menu .header__logo .h1__logo--color a {
         color: whitesmoke;
         text-decoration: none; }
