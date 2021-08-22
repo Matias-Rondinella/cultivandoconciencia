@@ -1,53 +1,41 @@
 @media only screen and (min-width:1024px){
     .footer{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
         background: $header;
-        .footer__redes--position{
-            display: flex;
-            flex-direction: row;
-            width: 70%;
-            height: 100px;
-            align-items: center;
-            justify-content: space-around;
+        .footer__logo--size{
+            width: 100px;
             position: relative;
-            right: 121px;
-            h3{
-                font-size: 30px;
-                color: $blanco;
+            top: 10px;
+            &:hover{
+                transition: .8s;
+                width: 110px;
             }
-            img.footer__img--size{
-                width: 80%;
-            }
-            .footer__enlace--animation{
-                transition: 2s;
-                &:hover{
-                    transform:rotate(360deg);
+        }
+        .footer__div{
+            padding: 0px 825px 0px 825px;
+            .footer__redes--position{
+                padding: 0px 15px 15px 15px;
+                img{
+                    width: 20%;
                 }
             }
         }
-            .footer__enlace--decoration{
-                text-decoration: none;
-                .footer__masInfo--font{
-                    font-size: 20px;
-                    color: $negro;
-                    background: $header;
-                    &:hover{
-                        background: $cardsBg;
-                        color: $blanco;
-                    }
-                    padding: 20px;
-                    border-radius: 230px;
-                    
 
-                }
-            }
-            
-    }
-    
+    }    
+}
+.footer__enlace--font{
+        color: $verde;
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 50px;
+        font-weight: bold;
+        &:hover{
+            color: $amarillo;
+        }
 }
 
 @media only screen and (max-width:767px){

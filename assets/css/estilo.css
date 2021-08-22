@@ -7502,40 +7502,33 @@ a.text-dark:hover, a.text-dark:focus {
 @media only screen and (min-width: 1024px) {
   .footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     background: linear-gradient(45deg, #1e9d82, #f8f9fa); }
-    .footer .footer__redes--position {
-      display: flex;
-      flex-direction: row;
-      width: 70%;
-      height: 100px;
-      align-items: center;
-      justify-content: space-around;
+    .footer .footer__logo--size {
+      width: 100px;
       position: relative;
-      right: 121px; }
-      .footer .footer__redes--position h3 {
-        font-size: 30px;
-        color: whitesmoke; }
-      .footer .footer__redes--position img.footer__img--size {
-        width: 80%; }
-      .footer .footer__redes--position .footer__enlace--animation {
-        transition: 2s; }
-        .footer .footer__redes--position .footer__enlace--animation:hover {
-          transform: rotate(360deg); }
-    .footer .footer__enlace--decoration {
-      text-decoration: none; }
-      .footer .footer__enlace--decoration .footer__masInfo--font {
-        font-size: 20px;
-        color: black;
-        background: linear-gradient(45deg, #1e9d82, #f8f9fa);
-        padding: 20px;
-        border-radius: 230px; }
-        .footer .footer__enlace--decoration .footer__masInfo--font:hover {
-          background: linear-gradient(270deg, #9b40f0, #dee2e6);
-          color: whitesmoke; } }
+      top: 10px; }
+      .footer .footer__logo--size:hover {
+        transition: .8s;
+        width: 110px; }
+    .footer .footer__div {
+      padding: 0px 825px 0px 825px; }
+      .footer .footer__div .footer__redes--position {
+        padding: 0px 15px 15px 15px; }
+        .footer .footer__div .footer__redes--position img {
+          width: 20%; } }
+
+.footer__enlace--font {
+  color: #1e9d82;
+  font-size: 15px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  font-weight: bold; }
+  .footer__enlace--font:hover {
+    color: #f5f376; }
 
 @media only screen and (max-width: 767px) {
   .footer {
@@ -7849,7 +7842,9 @@ a.text-dark:hover, a.text-dark:focus {
     text-align: center;
     padding-top: 50px; }
   h3 {
-    font-size: 25px; }
+    font-size: 40px;
+    padding-bottom: 15px;
+    color: #1e9d82; }
   h4 {
     font-size: 3.5rem;
     color: whitesmoke; }
