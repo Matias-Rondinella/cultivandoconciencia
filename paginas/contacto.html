@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="../assets/css/estilo.css">
 </head>
 <body class="bgG">
-  <div class="container-fluid" style="padding: 0px;overflow: hidden;">
-    <a href="" class="flechaSubir"><img src="../assets/imagenes/flecha-hacia-arriba.png" alt="Subir" style="width: 50px;"></a>
+    <a href="#flechaArriba" class="flechaSubir"><img src="../assets/imagenes/flecha-hacia-arriba.svg" alt="Subir" style="width: 80px;"></a>
+    <div class="container-fluid" style="padding: 0px;overflow: hidden;">
         <!-- Comienzo de Header -->
-        <div class="row">
+        <div class="row" id="flechaArriba">
             <div class="col-lg-12 col-xs-12">
                 <header class="menu">
                     <div class="header__logo">
@@ -118,20 +118,34 @@
         <!--Inicio de Footer-->
         <div class="row">
           <div class="col-lg-12 col-xs-12">
-              <footer class="footer">
-                  <div class="footer__redes--position">
-                      <h3>Redes Sociales</h3>
-                      <a href="https://www.instagram.com/cultivandoconciencia.cc/?hl=es-la" target="_blank" class="footer__enlace--animation"><img src="../assets/imagenes/iglogo.png" alt="igLogo" class="footer__imgIg--size"></a>
-                      <a href="https://www.facebook.com/cultivandoconciencia.cc" target="_blank" class="footer__enlace--animation"><img src="../assets/imagenes/facelogo.png" alt="fbLogo" class="footer__imgIg--size"></a>
-                      <a href="https://www.youtube.com/channel/UCFlcSuRntD5YC5bhGQPkmgw" target="_blank" class="footer__enlace--animation"><img src="../assets/imagenes/youtube.png" alt="ytLogo" class="footer__imgYt--size"></a>
-                  </div>
-                  <div class="footer__info--flex">
-                    <a href="contacto.html" class="footer__enlace--decoration"><h3 class="footer__masInfo--font">Más Info + </h3></a>
-                    <!-- <a href=""></a> -->
-                    <!-- <a href=""></a> -->
-                    <!-- <a href=""></a> -->
-                  </div>
-              </footer>
+            <footer class="footer">
+              <div style="display: contents;">
+                <a href="../index.html"><img src="../assets/imagenes/logoculti.png" alt="logoculti" class="footer__logo--size"></a>
+                <h3>Conectemos</h3>
+                <div class="footer__div">
+                  <a href="https://www.instagram.com/cultivandoconciencia.cc/?hl=es-la" target="_blank" class="footer__redes--position">
+                    <img src="../assets/imagenes/igIcon.gif" alt="igLogo"></a>
+                  <a href="https://www.facebook.com/cultivandoconciencia.cc" target="_blank" class="footer__redes--position">
+                    <img src="../assets/imagenes/faceIcon.gif" alt="fbLogo"></a>
+                  <a href="https://www.youtube.com/channel/UCFlcSuRntD5YC5bhGQPkmgw" target="_blank" class="footer__redes--position">
+                    <img src="../assets/imagenes/youtubeIcon.gif" alt="ytLogo"></a>
+                </div>
+                <ul class="nav justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link active footer__enlace--font" href="../paginas/semilla.html">Semilla</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link footer__enlace--font" href="../paginas/agroecologia.html">Agroecologia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link footer__enlace--font" href="../paginas/comunidad.html">Comunidad</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link footer__enlace--font" href="../paginas/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </footer>
           </div>
         </div>
         <!-- Cierre de Footer -->
