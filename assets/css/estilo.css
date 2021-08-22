@@ -7334,7 +7334,7 @@ a.text-dark:hover, a.text-dark:focus {
       flex-direction: row;
       align-items: center; }
       .menu .header__logo a {
-        width: 100px;
+        width: 75px;
         padding: 15px; }
       .menu .header__logo .header__logo--size {
         width: 100%;
@@ -7348,11 +7348,11 @@ a.text-dark:hover, a.text-dark:focus {
         .menu .header__logo .h1__logo--color a:hover {
           color: #f5f376; }
       .menu .header__logo .h1__logo--font {
-        font-size: 38px;
+        font-size: 28px;
         width: 475px;
         position: relative;
-        right: 5px;
-        top: 10px; }
+        right: 20px;
+        top: 12px; }
     .menu .navbar {
       width: 100%;
       display: flex;
@@ -7360,16 +7360,15 @@ a.text-dark:hover, a.text-dark:focus {
       .menu .navbar .navbar__li--padding {
         padding-right: 50px; }
         .menu .navbar .navbar__li--padding .navbar__enlace--color {
-          color: #1390a8; }
+          color: #1e7e34; }
           .menu .navbar .navbar__li--padding .navbar__enlace--color:hover {
             color: #f5f376; }
         .menu .navbar .navbar__li--padding .navbar__enlace--font {
-          font-size: 20px;
+          font-size: 16px;
           text-decoration: none;
-          font-weight: bold;
           transition: font-size 2s; }
           .menu .navbar .navbar__li--padding .navbar__enlace--font:hover {
-            font-size: 30px; } }
+            font-size: 20px; } }
 
 @media only screen and (max-width: 767px) {
   .menu {
@@ -7422,16 +7421,16 @@ a.text-dark:hover, a.text-dark:focus {
       position: relative;
       right: 60px; }
       .article .article__div .article__h2--font {
-        font-size: 60px;
+        font-size: 45px;
         color: #e9ecef;
         text-align: initial;
-        padding-right: 40px; }
+        padding-left: 75px; }
       .article .article__div .article__txt--font {
-        font-size: 25px;
+        font-size: 20px;
         text-align: initial;
-        padding-right: 0px;
+        padding-right: 30px;
         padding-left: 75px;
-        padding-top: 84px;
+        padding-top: 65px;
         color: whitesmoke; } }
 
 @media only screen and (max-width: 767px) {
