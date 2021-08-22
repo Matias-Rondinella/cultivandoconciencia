@@ -1,15 +1,20 @@
+
 .contenedorValores{
-    padding: 50px 200px 50px 200px;
+    background-color: #1e9d82;
+    padding: 50px 250px 100px 250px;
     .contenedorValores__card{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0px 75px 0px 75px;
+        // padding: 0px 75px 0px 75px;
+        
         p{
-         text-align: center;
-         padding: 25px;
-         font-size: 20px;
+            text-align: center;
+            padding-right: 100px;
+            font-size: 15px;
+            padding-left: 100px;
+            padding-top: 20px;;
         }
     }
 }

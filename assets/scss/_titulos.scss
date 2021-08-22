@@ -1,3 +1,5 @@
+@import"colores";
+
 $vista:desktop;
 
 @if $vista == desktop {
@@ -7,17 +9,19 @@ $vista:desktop;
         h2{font-size: 55px;}
         .h2Novedades {
             text-align: center;
-            background-image: url(../imagenes/campo.png);
+            padding-top: 50px;
             // font-size: 30px;
             }
         h3{font-size: 25px;}
-        h4{font-size: 3.5rem;}
+        h4{font-size: 3.5rem;
+        color: $blanco}
         h5{font-size: 75px;
             position: relative;
             bottom: 50px;
             opacity: 0.6;}
         h6{
-            font-size: 20px;
+            font-size: 25px;
+            padding-top: 35px;
         }
         p{
             font-family: 'Mali', cursive;
