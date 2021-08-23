@@ -185,13 +185,16 @@
 //
 
 .carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
   right: (100% - $carousel-caption-width) / 2;
   bottom: 20px;
   left: (100% - $carousel-caption-width) / 2;
   z-index: 10;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 155px;
   color: $carousel-caption-color;
-  text-align: center;
+  text-align: end;
 }

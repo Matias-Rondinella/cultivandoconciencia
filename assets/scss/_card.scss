@@ -54,6 +54,15 @@
   color: $card-color;
   display: flex;
   flex-direction: column;
+  width: 100%;
+    .card__body--img{
+      width: 100%;
+      transition: .9s;
+      @extend .card-body;
+      &:hover{
+        width: 103%;
+      }  
+    }
 }
 
 .card-title {
