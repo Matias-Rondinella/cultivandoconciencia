@@ -1,61 +1,78 @@
-.grilla__bg--color{
-    background: $bgGrillaSem;
+.grillaSem{
+    background: $verde;
+    .grilla__flex{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 50px;
+        .cardFlex{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+        }
+        .card__bg--color{
+            background: $amarillo;
+            width: 400px;
+            @media only screen and (max-width:767px){
+                margin-bottom: 20px;
+            }
+            
+        }
+        .card__border--radius{
+            border-radius: 40px;
+            .card-img-top{
+                border-radius: 25px;
+                padding: 20px;
+                @media only screen and (max-width: 767px){
+                    border-radius: 15px;
+                    padding: 10px;
+                }
+            }
+            .card-body{
+                .card-title{
+                    text-align: center;
+                    font-size: 20px;
+                    padding: 0;
+                }
+                .form__taller--flex{
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    top: 20px;
+                    padding: 20px;
+                    @media only screen and (max-width:767px){
+                        position: relative;
+                        top: 0;
+                        padding: 0;
+                    }
+                }
+
+            }
+        }
+        
+    }
 }
 
-.card__border--radius{
-    border-radius: 40px;
-}
 
-.card__bg--color{
-    background: $amarillo;
-    width: 400px;
-    @media only screen and (max-width:767px){
-        margin-bottom: 20px;
-    }
-    
-}
-.card-img-top{
-    border-radius: 25px;
-    padding: 20px;
-    @media only screen and (max-width: 767px){
-        border-radius: 15px;
-        padding: 10px;
-    }
-}
+
 .card-text{
-    font-size: 15px;
+    font-size: 13px;
     padding: 0;
     @media only screen and (max-width: 767px){
         font-size: 13px;
     }
     
 }
-.card-title{
-    text-align: center;
-    font-size: 20px;
-    padding: 0;
-}
-.card-text{
-    font-size: 13px;
-}
+
+
 .link__taller--color{
     color: $cardsBg;
     bottom: 20px;
     font-size: 12px;
     top: -5px;
 }
-.form__taller--flex{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 20px;
-    padding: 20px;
-    @media only screen and (max-width:767px){
-        position: relative;
-        top: 0;
-        padding: 0;
-    }
-}
+
 .form__button--color{
     background: linear-gradient(45deg, $verde, #f8f9fa);
 }
