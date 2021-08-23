@@ -7413,7 +7413,7 @@ a.text-dark:hover, a.text-dark:focus {
         text-align: initial;
         padding-left: 75px; }
       .article .article__div .article__txt--font {
-        font-size: 20px;
+        font-size: 16px;
         text-align: initial;
         padding-right: 30px;
         padding-left: 75px;
@@ -7831,10 +7831,10 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 25px;
     padding-top: 35px; }
   p {
-    font-family: 'Mali', cursive;
-    font-size: 35px; }
+    font-family: 'Azeret Mono', monospace;
+    font-size: 22px; }
   .pSlider {
-    font-size: 30px;
+    font-size: 15px;
     position: relative; }
   .slider2__txt {
     font-size: 20px;
