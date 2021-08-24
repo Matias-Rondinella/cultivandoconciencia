@@ -1,5 +1,6 @@
 .contenedorValores__title{
-    background-color: #1e9d82;
+    background: #1e9d82;
+    padding-top: 50px;
 }
 .contenedorValores{
     background-color: #1e9d82;
@@ -13,10 +14,11 @@
         
         p{
             text-align: center;
-            padding-right: 100px;
+            padding-right: 80px;
             font-size: 15px;
-            padding-left: 100px;
-            padding-top: 20px;;
+            padding-left: 80px;
+            padding-top: 20px;
+            color: $blanco;
         }
     }
 }

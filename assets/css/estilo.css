@@ -4754,16 +4754,13 @@ a.close.disabled {
 .carousel-caption {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  right: 15%;
-  bottom: 20px;
   left: 15%;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 155px;
-  color: #fff;
-  text-align: end; }
+  padding-bottom: 125px;
+  color: whitesmoke;
+  text-align: initial; }
+  .carousel-caption h5 {
+    text-shadow: 3px 0px 0px #0c0e0c, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black; }
 
 @keyframes spinner-border {
   to {
@@ -7444,9 +7441,7 @@ a.text-dark:hover, a.text-dark:focus {
     padding: 0px 100px 0px 100px;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-evenly;
-    background: transparent;
-    background-image: url("assets/imagenes/fondoNovedades.svg"); }
+    justify-content: space-evenly; }
     .cardsFlex .cardsFlex__card--size {
       width: 40%;
       height: 40%;
@@ -7827,17 +7822,21 @@ a.text-dark:hover, a.text-dark:focus {
     color: whitesmoke; }
   h5 {
     font-size: 60px;
-    position: relative;
-    opacity: 0.6; }
+    position: relative; }
   h6 {
     font-size: 25px;
-    padding-top: 35px; }
+    padding-top: 35px;
+    color: whitesmoke; }
   p {
     font-family: 'Azeret Mono', monospace;
     font-size: 22px; }
   .pSlider {
     font-size: 15px;
-    position: relative; }
+    position: relative;
+    font-size: 15px;
+    position: relative;
+    text-shadow: 3px 0px 0px #495057, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+    padding: 15px 0px 15px 0px; }
   .slider2__txt {
     font-size: 20px;
     color: #f8f9fa;
@@ -8000,6 +7999,10 @@ h1 {
       text-align: center;
       padding-bottom: 100px; } }
 
+.contenedorValores__title {
+  background: #1e9d82;
+  padding-top: 50px; }
+
 .contenedorValores {
   background-color: #1e9d82;
   padding: 50px 250px 100px 250px; }
@@ -8010,10 +8013,11 @@ h1 {
     justify-content: center; }
     .contenedorValores .contenedorValores__card p {
       text-align: center;
-      padding-right: 100px;
+      padding-right: 80px;
       font-size: 15px;
-      padding-left: 100px;
-      padding-top: 20px; }
+      padding-left: 80px;
+      padding-top: 20px;
+      color: whitesmoke; }
 
 .contenedorNoticias {
   padding: 50px 75px 50px 75px; }

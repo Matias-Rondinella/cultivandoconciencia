@@ -19,10 +19,11 @@ $vista:desktop;
         color: $blanco}
         h5{font-size: 60px;
             position: relative;
-            opacity: 0.6;}
+        }
         h6{
             font-size: 25px;
             padding-top: 35px;
+            color: $blanco;
         }
         p{
             font-family: 'Azeret Mono', monospace;
@@ -31,6 +32,10 @@ $vista:desktop;
         .pSlider{
             font-size: 15px;
             position: relative;
+            font-size: 15px;
+            position: relative;
+            text-shadow: 3px 0px 0px #495057, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+            padding: 15px 0px 15px 0px;
             
         }
         .slider2__txt{
