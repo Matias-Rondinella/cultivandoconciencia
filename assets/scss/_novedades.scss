@@ -6,7 +6,9 @@
         flex-wrap: nowrap;
         align-items: center;
         justify-content: space-evenly;
-        // background: $amarillo;
+        background: transparent;
+        background-image: url("assets/imagenes/fondoNovedades.svg");
+        
         .cardsFlex__card--size{
             width: 40%;
             height: 40%;

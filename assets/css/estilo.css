@@ -7444,7 +7444,9 @@ a.text-dark:hover, a.text-dark:focus {
     padding: 0px 100px 0px 100px;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    background: transparent;
+    background-image: url("assets/imagenes/fondoNovedades.svg"); }
     .cardsFlex .cardsFlex__card--size {
       width: 40%;
       height: 40%;
