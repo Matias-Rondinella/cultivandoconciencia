@@ -4754,13 +4754,13 @@ a.close.disabled {
 .carousel-caption {
   display: flex;
   flex-direction: column;
-  left: 15%;
+  bottom: 135px;
   z-index: 10;
-  padding-bottom: 125px;
   color: whitesmoke;
-  text-align: initial; }
+  text-align: center; }
   .carousel-caption h5 {
-    text-shadow: 3px 0px 0px #0c0e0c, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black; }
+    text-shadow: 3px 3px 3px #0c0e0c, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+    font-size: 75px; }
 
 @keyframes spinner-border {
   to {
@@ -7825,15 +7825,12 @@ a.text-dark:hover, a.text-dark:focus {
     position: relative; }
   h6 {
     font-size: 25px;
-    padding-top: 35px;
     color: whitesmoke; }
   p {
     font-family: 'Azeret Mono', monospace;
     font-size: 22px; }
   .pSlider {
-    font-size: 15px;
-    position: relative;
-    font-size: 15px;
+    font-size: 20px;
     position: relative;
     text-shadow: 3px 0px 0px #495057, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
     padding: 15px 0px 15px 0px; }
@@ -7990,14 +7987,13 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px; }
-    .slider2 .slider2__img {
-      padding-bottom: 50px; }
+    padding-top: 100px;
+    padding-bottom: 100px; }
     .slider2 .slider2__txt {
       font-size: 40px;
       color: #f8f9fa;
       text-align: center;
-      padding-bottom: 100px; } }
+      padding-bottom: 35px; } }
 
 .contenedorValores__title {
   background: #1e9d82;
