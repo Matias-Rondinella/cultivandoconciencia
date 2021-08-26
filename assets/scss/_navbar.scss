@@ -14,7 +14,7 @@
 //
 // Provide a static navbar from which we expand to create full-width, fixed, and
 // other navbar variations.
-
+@import "colores";
 .navbar {
   position: relative;
   display: flex;
@@ -74,6 +74,9 @@
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  @media only screen and (max-width:767px){
+    align-items: flex-end;
+  }
 
   .nav-link {
     padding-right: 0;
@@ -259,12 +262,21 @@
   }
 
   .navbar-toggler {
-    color: $navbar-light-color;
-    border-color: $navbar-light-toggler-border-color;
+    color: $verde;
+    border-color: $verde;
+    @media only screen and (max-width: 767px){
+      background-image: url(../imagenes/logoculti.png);
+      width: 70%;
+    }
   }
 
   .navbar-toggler-icon {
-    background-image: escape-svg($navbar-light-toggler-icon-bg);
+    color: $verde;
+    border-color: $verde;
+    @media only screen and (max-width: 767px){
+      background-image: url(../imagenes/logoculti.png);
+      width: 70%;
+    }
   }
 
   .navbar-text {
@@ -311,12 +323,21 @@
   }
 
   .navbar-toggler {
-    color: $navbar-dark-color;
-    border-color: $navbar-dark-toggler-border-color;
+    color: $verde;
+    border-color: $verde;
+    @media only screen and (max-width: 767px){
+      background-image: url(../imagenes/logoculti.png);
+      width: 70%;
+    }
   }
 
   .navbar-toggler-icon {
-    background-image: escape-svg($navbar-dark-toggler-icon-bg);
+    color: $verde;
+    border-color: $verde;
+    @media only screen and (max-width: 767px){
+      background-image: url(../imagenes/logoculti.png);
+      width: 70%;
+    }
   }
 
   .navbar-text {

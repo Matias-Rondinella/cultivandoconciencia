@@ -40,50 +40,44 @@
 
 @media only screen and (max-width:767px){
     .footer{
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background: $header;
-        .footer__redes--position{
+        .footer__logo--size{
+            width: 100px;
+            // position: relative;
+        }
+        h3{
+            font-size: 2.625rem; 
+        }
+        .footer__div{
             display: flex;
-            width: 100%;
-            height: 100px;
-            position: relative;
+            flex-direction: row;
             align-items: center;
-            h3{
-                font-size: 20px;
-                color: blueviolet;
-                text-align: center;
-            }
-            .footer__imgIg--size{
-                width: 45%;
-                margin-left: 20px;
-            }
-            .footer__imgYt--size{
-                width: 100%;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-        }
-        .footer__enlace--decoration{
-            text-decoration: none;
-            .footer__masInfo--font{
-                font-size: 15px;
-                color: $negro;
-                background: linear-gradient(
-                    45deg
-                    , #ffc107, #f8f9fa);
-                &:hover{
-                    background: $cardsBg;
-                    color: $blanco;
-                }
-                padding: 10px;
-                border-radius: 180px;
-                width:27%;
-                margin: 0;
+            justify-content: space-evenly;
+            .footer__redes--position{
+                display: flex;
+                /* width: 10%; */
+                height: 100px;
                 position: relative;
-                left: 135px;
-                bottom: 10px;}
+                flex-direction: row;
+                align-items: center;
+                img{
+                    width: 70px;
+                }
+            }
         }
-                   
-    }
-    
+
+    }    
+}
+.footer__enlace--font{
+        color: $verde;
+        font-size: 15px;
+        padding-top: 15px;
+        // padding-bottom: 50px;
+        font-weight: bold;
+        &:hover{
+            color: $amarillo;
+        }
 }

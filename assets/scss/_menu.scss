@@ -79,13 +79,12 @@
         background: $header;
         display: flex;
         align-items: center;
-        flex-direction: row;
         .header__logo{
             display: flex;
             flex-direction: row;
             align-items: center;
             .header__logo--size{
-                width: 80%;
+                width: 70%;
             }
             .h1__logo--color a{
                 color: $blanco;
@@ -103,7 +102,7 @@
         .navbar{
             width: 100%;
             display: flex;
-            justify-content: flex-start;
+            justify-content: flex-end;
             .navbar__button--size{
                 width: 100%;
                 background: $verde;
@@ -111,17 +110,17 @@
             .navbar__li--padding{
                 padding-right: 0;
                 .navbar__enlace--color{
-                    color: $negro;
+                    color: #28a745;
                     &:hover{
-                    color: $amarillo;
+                    color: rgb(67, 95, 255);
     
                     }
     
                 }
                 .navbar__enlace--font{
-                    font-size: 12px;
+                    font-size: 20px;
                     text-decoration: none;
-                    font-weight: bold;
+                    // font-weight: bold;
                 }
         
             }

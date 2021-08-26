@@ -1,24 +1,56 @@
-.contenedorValores__title{
-    background: #1e9d82;
-    padding-top: 50px;
+@media only screen and (min-width: 1024px){
+    .contenedorValores__title{
+        background: #1e9d82;
+        padding-top: 50px;
+    }
+    .contenedorValores{
+        background-color: #1e9d82;
+        padding: 50px 250px 100px 250px;
+        .contenedorValores__card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            // padding: 0px 75px 0px 75px;
+            
+            p{
+                text-align: center;
+                padding-right: 80px;
+                font-size: 15px;
+                padding-left: 80px;
+                padding-top: 20px;
+                color: $blanco;
+            }
+        }
+    }
+    
 }
-.contenedorValores{
-    background-color: #1e9d82;
-    padding: 50px 250px 100px 250px;
-    .contenedorValores__card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        // padding: 0px 75px 0px 75px;
-        
-        p{
-            text-align: center;
-            padding-right: 80px;
-            font-size: 15px;
-            padding-left: 80px;
-            padding-top: 20px;
-            color: $blanco;
+@media only screen and (max-width:767px){
+    .contenedorValores__title{
+        background: #1e9d82;
+        padding-top: 50px;
+    }
+    .contenedorValores{
+        background-color: #1e9d82;
+        padding: 50px 0px 50px 0px;
+        .contenedorValores__card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            // padding: 0px 75px 0px 75px;
+            img{
+                width: 120px;
+            }
+            
+            p{
+                text-align: center;
+                padding-right: 80px;
+                font-size: 15px;
+                padding-left: 80px;
+                padding-bottom:30px;
+                color: $blanco;
+            }
         }
     }
 }
