@@ -1,36 +1,74 @@
-.grilla__bg--color{
-    background: $verde;
-    padding: 50px 130px 50px 130px;
-    .grilla__iframes--flex{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .cardsAgro--flex{
+@media only screen and (min-width:1024px){
+    .grilla__bg--color{
+        background: $verde;
+        padding: 50px 130px 50px 130px;
+        .grilla__iframes--flex{
             display: flex;
+            justify-content: center;
             align-items: center;
-        }
-        .cardsAgro--boxModel{
-            width: 100%;
-            height: 500px;
-            padding: 22px;
-            border-radius: 25px;
-            margin: 15px;
-            .iframeVideo--boxModel{
-                height: 800px;
-                width: 900px;
+            .cardsAgro--flex{
+                display: flex;
+                align-items: center;
+            }
+            .cardsAgro--boxModel{
+                width: 100%;
+                height: 500px;
+                padding: 22px;
                 border-radius: 25px;
-                @media only screen and (max-width: 767px){
-                    height: 250px;
+                margin: 15px;
+                .iframeVideo--boxModel{
+                    height: 800px;
+                    width: 900px;
+                    border-radius: 25px;
+                    @media only screen and (max-width: 767px){
+                        height: 250px;
+                    }
+                }
+                .cardAgro__body--flex{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    // padding: 35px;
                 }
             }
-            .cardAgro__body--flex{
+        }
+}
+}
+
+@media only screen and (max-width:767px){
+    .grilla__bg--color{
+        background: $verde;
+        
+        .grilla__iframes--flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cardsAgro--flex{
                 display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                // padding: 35px;
+                align-items: center;
+            }
+            .cardsAgro--boxModel{
+                width: 100%;
+                padding: 22px;
+                border-radius: 25px;
+                margin: 15px;
+                .iframeVideo--boxModel{
+                    height: 800px;
+                    width: 900px;
+                    border-radius: 25px;
+                    @media only screen and (max-width: 767px){
+                        height: 250px;
+                    }
+                }
+                .cardAgro__body--flex{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    // padding: 35px;
+                }
             }
         }
-    }
+}
 }
 
 

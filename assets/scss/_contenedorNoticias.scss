@@ -1,12 +1,58 @@
-.contenedorNoticias{
-    padding: 50px 75px 50px 75px;
-    .card-text{
-        font-size: 13px;
-        padding: 0;
-        text-align: center;
-        @media only screen and (max-width: 767px){
+@media only screen and (min-width:1024px){
+    .contenedorNoticias{
+        padding: 50px 75px 50px 75px;
+        .card-text{
             font-size: 13px;
+            padding: 0;
+            text-align: center;
         }
-        
+            
     }
 }
+
+@media only screen and (max-width:767px){
+    .contenedorNoticias{
+        padding: 0px 15px 0px 15px; 
+        .paddingBotNoti{
+            padding-bottom: 30px;
+        }   
+        .card-title {
+            margin-bottom: 0.75rem;
+            text-align: center;
+            font-size: 21px;
+            padding-top: 22px;
+            color: #212529;
+            }
+        
+        .card-text{
+            font-size: 13px;
+            padding: 0;
+            text-align: center;
+            color: $blanco;
+        }
+        .btnMob{
+            display: inline-block;
+            font-weight: 400;
+            color: #212529;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: $verde;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 2rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+
+    }
+}
+
+            
+
+

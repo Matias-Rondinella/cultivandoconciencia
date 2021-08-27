@@ -391,9 +391,9 @@ mark,
 .img-fluid__agricultor {
   position: relative;
   right: 60px;
-  width: 400px; }
+  width: 450px; }
   .img-fluid__agricultor:hover {
-    width: 415px;
+    width: 475px;
     right: 10px;
     transition: 1s; }
 
@@ -4799,13 +4799,13 @@ a.close.disabled {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
     color: whitesmoke;
     text-align: center;
     top: -5px;
     right: 0;
     left: 0;
-    bottom: 20px; }
+    bottom: 20px;
+    padding: 20px 50px 20px 50px; }
     .carousel-caption h5 {
       text-shadow: 3px 3px 3px #0c0e0c, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
       font-size: 30px; }
@@ -4816,7 +4816,10 @@ a.close.disabled {
     .carousel-caption a {
       width: 150px;
       position: relative;
-      left: 105px; }
+      display: contents; }
+      .carousel-caption a:hover {
+        color: #1e9d82;
+        text-decoration: none; }
       .carousel-caption a button {
         display: inline-block;
         font-weight: 400;
@@ -4825,7 +4828,10 @@ a.close.disabled {
         text-align: center;
         vertical-align: middle;
         user-select: none;
-        background-color: #1e9d82; } }
+        background-color: #1e9d82; }
+        .carousel-caption a button:hover {
+          color: #f8f9fa;
+          text-decoration: none; } }
 
 @keyframes spinner-border {
   to {
@@ -7680,33 +7686,65 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   justify-content: center; }
 
-.grilla__bg--color {
-  background: #1e9d82;
-  padding: 50px 130px 50px 130px; }
-  .grilla__bg--color .grilla__iframes--flex {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .grilla__bg--color .grilla__iframes--flex .cardsAgro--flex {
+@media only screen and (min-width: 1024px) {
+  .grilla__bg--color {
+    background: #1e9d82;
+    padding: 50px 130px 50px 130px; }
+    .grilla__bg--color .grilla__iframes--flex {
       display: flex;
+      justify-content: center;
       align-items: center; }
-    .grilla__bg--color .grilla__iframes--flex .cardsAgro--boxModel {
-      width: 100%;
-      height: 500px;
-      padding: 22px;
-      border-radius: 25px;
-      margin: 15px; }
-      .grilla__bg--color .grilla__iframes--flex .cardsAgro--boxModel .iframeVideo--boxModel {
-        height: 800px;
-        width: 900px;
-        border-radius: 25px; }
-        @media only screen and (max-width: 767px) {
+      .grilla__bg--color .grilla__iframes--flex .cardsAgro--flex {
+        display: flex;
+        align-items: center; }
+      .grilla__bg--color .grilla__iframes--flex .cardsAgro--boxModel {
+        width: 100%;
+        height: 500px;
+        padding: 22px;
+        border-radius: 25px;
+        margin: 15px; }
+        .grilla__bg--color .grilla__iframes--flex .cardsAgro--boxModel .iframeVideo--boxModel {
+          height: 800px;
+          width: 900px;
+          border-radius: 25px; } }
+        @media only screen and (min-width: 1024px) and (max-width: 767px) {
           .grilla__bg--color .grilla__iframes--flex .cardsAgro--boxModel .iframeVideo--boxModel {
             height: 250px; } }
-      .grilla__bg--color .grilla__iframes--flex .cardsAgro--boxModel .cardAgro__body--flex {
+
+@media only screen and (min-width: 1024px) {
+        .grilla__bg--color .grilla__iframes--flex .cardsAgro--boxModel .cardAgro__body--flex {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly; } }
+
+@media only screen and (max-width: 767px) {
+  .grilla__bg--color {
+    background: #1e9d82; }
+    .grilla__bg--color .grilla__iframes--flex {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .grilla__bg--color .grilla__iframes--flex .cardsAgro--flex {
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly; }
+        align-items: center; }
+      .grilla__bg--color .grilla__iframes--flex .cardsAgro--boxModel {
+        width: 100%;
+        padding: 22px;
+        border-radius: 25px;
+        margin: 15px; }
+        .grilla__bg--color .grilla__iframes--flex .cardsAgro--boxModel .iframeVideo--boxModel {
+          height: 800px;
+          width: 900px;
+          border-radius: 25px; } }
+        @media only screen and (max-width: 767px) and (max-width: 767px) {
+          .grilla__bg--color .grilla__iframes--flex .cardsAgro--boxModel .iframeVideo--boxModel {
+            height: 250px; } }
+
+@media only screen and (max-width: 767px) {
+        .grilla__bg--color .grilla__iframes--flex .cardsAgro--boxModel .cardAgro__body--flex {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly; } }
 
 .iframeCom__pad--boxModel {
   padding: 30px; }
@@ -8111,15 +8149,47 @@ h1 {
         padding-bottom: 30px;
         color: whitesmoke; } }
 
-.contenedorNoticias {
-  padding: 50px 75px 50px 75px; }
-  .contenedorNoticias .card-text {
-    font-size: 13px;
-    padding: 0;
-    text-align: center; }
-    @media only screen and (max-width: 767px) {
-      .contenedorNoticias .card-text {
-        font-size: 13px; } }
+@media only screen and (min-width: 1024px) {
+  .contenedorNoticias {
+    padding: 50px 75px 50px 75px; }
+    .contenedorNoticias .card-text {
+      font-size: 13px;
+      padding: 0;
+      text-align: center; } }
+
+@media only screen and (max-width: 767px) {
+  .contenedorNoticias {
+    padding: 0px 15px 0px 15px; }
+    .contenedorNoticias .paddingBotNoti {
+      padding-bottom: 30px; }
+    .contenedorNoticias .card-title {
+      margin-bottom: 0.75rem;
+      text-align: center;
+      font-size: 21px;
+      padding-top: 22px;
+      color: #212529; }
+    .contenedorNoticias .card-text {
+      font-size: 13px;
+      padding: 0;
+      text-align: center;
+      color: whitesmoke; }
+    .contenedorNoticias .btnMob {
+      display: inline-block;
+      font-weight: 400;
+      color: #212529;
+      text-align: center;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: #1e9d82;
+      border: 1px solid transparent;
+      padding: .375rem .75rem;
+      font-size: 2rem;
+      line-height: 1.5;
+      border-radius: .25rem;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; } }
 
 * {
   margin: 0;
