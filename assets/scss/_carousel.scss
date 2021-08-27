@@ -207,7 +207,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
     color: whitesmoke;
     text-align: center;
     top: -5px;
@@ -229,7 +228,7 @@
         width: 150px;
         position: relative;
         display: contents;
-        :hover{color: $verde;
+        &:hover{color: $verde;
         text-decoration: none;}
         button{
           display: inline-block;
