@@ -4,57 +4,60 @@
 // Base styles
 //
 @import "colores";
-
-.btn {
-  display: inline-block;
-  font-family: $btn-font-family;
-  font-weight: $btn-font-weight;
-  font-size: 2rem;
-  color: $blanco;
-  text-align: center;
-  text-decoration: if($link-decoration == none, null, none);
-  white-space: $btn-white-space;
-  vertical-align: middle;
-  user-select: none;
-  background-color: $verde;
-  transition: 2s;
-    &:hover{
-      background-color: $amarillo;
-      font-size:2.5rem;}
-      // border: $btn-border-width solid transparent;
+@media only screen and (min-width:1024px){
+  .btn {
+    display: inline-block;
+    font-family: $btn-font-family;
+    font-weight: $btn-font-weight;
+    font-size: 2rem;
+    color: $blanco;
+    text-align: center;
+    text-decoration: if($link-decoration == none, null, none);
+    white-space: $btn-white-space;
+    vertical-align: middle;
+    user-select: none;
+    background-color: $verde;
+    transition: 2s;
+      &:hover{
+        background-color: $amarillo;
+        font-size:2.5rem;}
+        // border: $btn-border-width solid transparent;
+    
   
-
-  @include hover() {
-    color: $body-color;
-    text-decoration: none;
-  }
-
-  &:focus,
-  &.focus {
-    outline: 0;
-    box-shadow: $btn-focus-box-shadow;
-  }
-
-  // Disabled comes first so active can properly restyle
-  &.disabled,
-  &:disabled {
-    opacity: $btn-disabled-opacity;
-    @include box-shadow(none);
-  }
-
-  &:not(:disabled):not(.disabled) {
-    cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
-
-    &:active,
-    &.active {
-      @include box-shadow($btn-active-box-shadow);
-
-      &:focus {
-        @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
-      }
+    @include hover() {
+      color: $blanco;
+      text-decoration: none;
     }
   
+    &:focus,
+    &.focus {
+      outline: 0;
+      box-shadow: $btn-focus-box-shadow;
+    }
+  
+    // Disabled comes first so active can properly restyle
+    &.disabled,
+    &:disabled {
+      opacity: $btn-disabled-opacity;
+      @include box-shadow(none);
+    }
+  
+    &:not(:disabled):not(.disabled) {
+      cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
+  
+      &:active,
+      &.active {
+        @include box-shadow($btn-active-box-shadow);
+  
+        &:focus {
+          @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+        }
+      }
+    
+  }
+
 }
+
 
 // Future-proof disabling of clicks on `<a>` elements
 a.btn.disabled,
@@ -91,7 +94,7 @@ fieldset:disabled a.btn {
   text-decoration: $link-decoration;
 
   @include hover() {
-    color: $link-hover-color;
+    color: $blanco;
     text-decoration: $link-hover-decoration;
   }
 
@@ -102,7 +105,7 @@ fieldset:disabled a.btn {
 
   &:disabled,
   &.disabled {
-    color: $btn-link-disabled-color;
+    color: $blanco;
     pointer-events: none;
   }
 
