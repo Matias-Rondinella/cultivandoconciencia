@@ -48,8 +48,11 @@
         // padding-bottom: 15px;
         // background: $bgArticle;
         align-items: center;
+        background-color: cadetblue;
+        margin: 24px;
+    
         .article__h2--font{
-            font-size: 31px;
+            font-size: 30px;
             color: $amarillo;
             margin-top: 15px;
             margin-bottom: 15px;
@@ -59,11 +62,11 @@
         .article__txt--font{
             font-size: 16px;
             text-align: center;
-            padding: 25px;
+            padding: 7px;
             color: $blanco;
     
         }
-    
     }
-
 }
+
+

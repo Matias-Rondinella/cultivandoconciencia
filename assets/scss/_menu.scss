@@ -78,11 +78,15 @@
     .menu{
         background: $header;
         display: flex;
+        flex-direction: row;
         align-items: center;
         .header__logo{
             display: flex;
             flex-direction: row;
             align-items: center;
+            position: relative;
+            left: 80px;
+            top: 8px;
             .header__logo--size{
                 width: 70%;
             }
@@ -94,7 +98,7 @@
                 }
             }
             .h1__logo--font{
-                font-size:25px;
+                font-size:26px;
                 position: relative;
                 right: 27px;
             }

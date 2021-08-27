@@ -3203,8 +3203,8 @@ h1 {
   font-size: 1.5rem;
   line-height: 1;
   background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.25rem; }
+  border: 10px solid transparent;
+  border-radius: 4.25rem; }
   .navbar-toggler:hover, .navbar-toggler:focus {
     text-decoration: none; }
 
@@ -3381,7 +3381,8 @@ h1 {
   @media only screen and (max-width: 767px) {
     .navbar-light .navbar-toggler {
       background-image: url(../imagenes/logoculti.png);
-      width: 70%; } }
+      width: 50%;
+      height: 80px; } }
 
 .navbar-light .navbar-toggler-icon {
   color: #1e9d82;
@@ -3389,7 +3390,10 @@ h1 {
   @media only screen and (max-width: 767px) {
     .navbar-light .navbar-toggler-icon {
       background-image: url(../imagenes/logoculti.png);
-      width: 70%; } }
+      font-size: xxx-large;
+      position: relative;
+      bottom: 9px;
+      right: 5px; } }
 
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.5); }
@@ -3422,7 +3426,10 @@ h1 {
   @media only screen and (max-width: 767px) {
     .navbar-dark .navbar-toggler {
       background-image: url(../imagenes/logoculti.png);
-      width: 70%; } }
+      width: 75%;
+      height: 65px;
+      position: relative;
+      left: 15px; } }
 
 .navbar-dark .navbar-toggler-icon {
   color: #1e9d82;
@@ -3430,7 +3437,10 @@ h1 {
   @media only screen and (max-width: 767px) {
     .navbar-dark .navbar-toggler-icon {
       background-image: url(../imagenes/logoculti.png);
-      width: 70%; } }
+      font-size: xx-large;
+      position: relative;
+      bottom: 13px;
+      right: 17px; } }
 
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.5); }
@@ -7377,11 +7387,15 @@ a.text-dark:hover, a.text-dark:focus {
   .menu {
     background: linear-gradient(45deg, #1e9d82, #f8f9fa);
     display: flex;
+    flex-direction: row;
     align-items: center; }
     .menu .header__logo {
       display: flex;
       flex-direction: row;
-      align-items: center; }
+      align-items: center;
+      position: relative;
+      left: 80px;
+      top: 8px; }
       .menu .header__logo .header__logo--size {
         width: 70%; }
       .menu .header__logo .h1__logo--color a {
@@ -7390,7 +7404,7 @@ a.text-dark:hover, a.text-dark:focus {
         .menu .header__logo .h1__logo--color a:hover {
           color: #f5f376; }
       .menu .header__logo .h1__logo--font {
-        font-size: 25px;
+        font-size: 26px;
         position: relative;
         right: 27px; }
     .menu .navbar {
@@ -7437,9 +7451,11 @@ a.text-dark:hover, a.text-dark:focus {
 @media only screen and (max-width: 767px) {
   .article {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    background-color: cadetblue;
+    margin: 24px; }
     .article .article__h2--font {
-      font-size: 31px;
+      font-size: 30px;
       color: #f5f376;
       margin-top: 15px;
       margin-bottom: 15px;
@@ -7447,7 +7463,7 @@ a.text-dark:hover, a.text-dark:focus {
     .article .article__txt--font {
       font-size: 16px;
       text-align: center;
-      padding: 25px;
+      padding: 7px;
       color: whitesmoke; } }
 
 @media only screen and (min-width: 1024px) {

@@ -123,8 +123,8 @@
   @include font-size($navbar-toggler-font-size);
   line-height: 1;
   background-color: transparent; // remove default button style
-  border: $border-width solid transparent; // remove default button style
-  @include border-radius($navbar-toggler-border-radius);
+  border: 10px solid transparent; // remove default button style
+  border-radius: 4.25rem;
 
   @include hover-focus() {
     text-decoration: none;
@@ -266,7 +266,8 @@
     border-color: $verde;
     @media only screen and (max-width: 767px){
       background-image: url(../imagenes/logoculti.png);
-      width: 70%;
+      width: 50%;
+      height: 80px;
     }
   }
 
@@ -275,7 +276,10 @@
     border-color: $verde;
     @media only screen and (max-width: 767px){
       background-image: url(../imagenes/logoculti.png);
-      width: 70%;
+      font-size: xxx-large;
+      position: relative;
+      bottom: 9px;
+      right: 5px;
     }
   }
 
@@ -327,7 +331,10 @@
     border-color: $verde;
     @media only screen and (max-width: 767px){
       background-image: url(../imagenes/logoculti.png);
-      width: 70%;
+      width: 75%;
+      height: 65px;
+      position: relative;
+      left: 15px;
     }
   }
 
@@ -336,7 +343,11 @@
     border-color: $verde;
     @media only screen and (max-width: 767px){
       background-image: url(../imagenes/logoculti.png);
-      width: 70%;
+      // width: 70%;
+      font-size: xx-large;
+      position: relative;
+      bottom: 13px;
+      right: 17px;
     }
   }
 
