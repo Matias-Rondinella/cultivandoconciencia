@@ -8105,8 +8105,12 @@ h1 {
       color: #f5f376;
       text-align: center;
       padding-bottom: 10px; }
-    .slider2 .slider2__img {
-      padding: 10px; } }
+    .slider2 .slider2__div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .slider2 .slider2__div .slider2__img {
+        padding: 5px; } }
 
 @media only screen and (min-width: 1024px) {
   .contenedorValores__title {

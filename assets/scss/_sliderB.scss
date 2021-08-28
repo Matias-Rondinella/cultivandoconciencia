@@ -20,7 +20,8 @@
 @media only screen and (max-width:767px){
     .slider2{
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
+        align-items: center;        
         // padding-top: 100px;
         // padding-bottom: 100px;
         .slider2__txtTodos{
@@ -33,14 +34,13 @@
             text-align: center;
             padding-bottom: 10px;        
         }
-        .divSlider2{
+        .slider2__div{
             display: flex;
             flex-direction: column;
             align-items: center;
             .slider2__img{    
                 padding: 5px;        
-            }
-        }
-        
+            }  
+        }       
     }
-}
+}    
