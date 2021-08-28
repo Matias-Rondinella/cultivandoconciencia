@@ -7569,11 +7569,12 @@ a.text-dark:hover, a.text-dark:focus {
         transition: .8s;
         width: 110px; }
     .footer .footer__div {
-      padding: 0px 825px 0px 825px; }
+      display: flex;
+      justify-content: center; }
       .footer .footer__div .footer__redes--position {
         padding: 0px 15px 15px 15px; }
         .footer .footer__div .footer__redes--position img {
-          width: 20%; } }
+          width: 75px; } }
 
 .footer__enlace--font {
   color: #1e9d82;

@@ -16,11 +16,12 @@
             }
         }
         .footer__div{
-            padding: 0px 825px 0px 825px;
+            display: flex;
+            justify-content: center;
             .footer__redes--position{
                 padding: 0px 15px 15px 15px;
                 img{
-                    width: 20%;
+                    width: 75px;
                 }
             }
         }
