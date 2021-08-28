@@ -119,12 +119,14 @@
 
 // Button for toggling the navbar when in its collapsed state
 .navbar-toggler {
-  padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+  // padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
   @include font-size($navbar-toggler-font-size);
   line-height: 1;
   background-color: transparent; // remove default button style
   border: 10px solid transparent; // remove default button style
   border-radius: 4.25rem;
+  width: 85px;
+  height: 85px;
 
   @include hover-focus() {
     text-decoration: none;
@@ -139,7 +141,8 @@
   height: 1.5em;
   vertical-align: middle;
   content: "";
-  background: 50% / 100% 100% no-repeat;
+  background: 50% / 200% 200% no-repeat;
+ 
 }
 
 .navbar-nav-scroll {
@@ -270,6 +273,17 @@
       // height: 80px;
       display: flex;
       flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      animation: bkgButton 2s ease-in .5s;
+      animation-iteration-count: infinite;
+      @keyframes bkgButton{
+        0%{color: $verde;}
+        25%{color: aquamarine;}
+        50%{color: cadetblue;}
+        75%{color: aquamarine;}
+        100%{color: $verde;}
+      }
     }
   }
 
@@ -278,10 +292,11 @@
     border-color: $verde;
     @media only screen and (max-width: 767px){
       background-image: url(../imagenes/logoculti.png);
-      font-size: xxx-large;
+      font-size: 30px;
       // position: relative;
       // bottom: 9px;
       // right: 5px;
+      
     }
   }
 

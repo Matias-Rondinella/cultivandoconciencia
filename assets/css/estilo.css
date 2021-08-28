@@ -2293,6 +2293,18 @@ h1 {
   100% {
     transform: translateX(0px); } }
 
+@keyframes bkgButton {
+  0% {
+    background: #1e9d82; }
+  25% {
+    background: aquamarine; }
+  50% {
+    background: #f5f376; }
+  75% {
+    background: aquamarine; }
+  100% {
+    background: #1e9d82; } }
+
 @keyframes color {
   50% {
     color: whitesmoke; } }
@@ -2316,6 +2328,10 @@ h1 {
       font-size: 35px;
       background-color: #1e9d82;
       margin: 0; } }
+
+.navbar-light .navbar-toggler {
+  animation: bkgButton 10s ease-in .5s;
+  animation-iteration-count: infinite; }
 
 .dropup,
 .dropright,
@@ -3206,12 +3222,13 @@ h1 {
   align-items: center; }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
   font-size: 1.5rem;
   line-height: 1;
   background-color: transparent;
   border: 10px solid transparent;
-  border-radius: 4.25rem; }
+  border-radius: 4.25rem;
+  width: 85px;
+  height: 85px; }
   .navbar-toggler:hover, .navbar-toggler:focus {
     text-decoration: none; }
 
@@ -3221,7 +3238,7 @@ h1 {
   height: 1.5em;
   vertical-align: middle;
   content: "";
-  background: 50% / 100% 100% no-repeat; }
+  background: 50% / 200% 200% no-repeat; }
 
 .navbar-nav-scroll {
   max-height: 75vh;
@@ -3389,7 +3406,22 @@ h1 {
     .navbar-light .navbar-toggler {
       background-image: url(../imagenes/logoculti.png);
       display: flex;
-      flex-direction: row; } }
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      animation: bkgButton 2s ease-in .5s;
+      animation-iteration-count: infinite; }
+    @keyframes bkgButton {
+      0% {
+        color: #1e9d82; }
+      25% {
+        color: aquamarine; }
+      50% {
+        color: cadetblue; }
+      75% {
+        color: aquamarine; }
+      100% {
+        color: #1e9d82; } } }
 
 .navbar-light .navbar-toggler-icon {
   color: #1e9d82;
@@ -3397,7 +3429,7 @@ h1 {
   @media only screen and (max-width: 767px) {
     .navbar-light .navbar-toggler-icon {
       background-image: url(../imagenes/logoculti.png);
-      font-size: xxx-large; } }
+      font-size: 30px; } }
 
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.5); }
@@ -8055,6 +8087,18 @@ h1 {
   100% {
     transform: translateX(0px); } }
 
+@keyframes bkgButton {
+  0% {
+    background: #1e9d82; }
+  25% {
+    background: aquamarine; }
+  50% {
+    background: #f5f376; }
+  75% {
+    background: aquamarine; }
+  100% {
+    background: #1e9d82; } }
+
 @keyframes color {
   50% {
     color: whitesmoke; } }
@@ -8078,6 +8122,10 @@ h1 {
       font-size: 35px;
       background-color: #1e9d82;
       margin: 0; } }
+
+.navbar-light .navbar-toggler {
+  animation: bkgButton 10s ease-in .5s;
+  animation-iteration-count: infinite; }
 
 @media only screen and (min-width: 1024px) {
   .slider2 {

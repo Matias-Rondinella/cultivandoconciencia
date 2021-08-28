@@ -146,6 +146,13 @@ h1 {
     transform: translateX(0px);
   }
 }
+@keyframes bkgButton{
+  0%{background: $verde;}
+  25%{background: aquamarine;}
+  50%{background: $amarillo;}
+  75%{background: aquamarine;}
+  100%{background: $verde;}
+}
 @keyframes color {
   // 0% {
   //   color: rgb(80, 255, 182);
@@ -181,5 +188,12 @@ h1 {
     font-size: 35px;
     background-color: $verde;
     margin: 0;
+  }
+}
+
+.navbar-light{
+  .navbar-toggler{
+    animation: bkgButton 10s ease-in .5s;
+    animation-iteration-count: infinite;
   }
 }
