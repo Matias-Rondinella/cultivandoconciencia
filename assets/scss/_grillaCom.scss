@@ -1,23 +1,50 @@
-.grillaCom__bg--color{
-    background: $bgGrillaCom;
-    @media only screen and (max-width: 767px){
-        background: none;
+@media only screen and (min-width:1024px){
+    .grillaCom__bg--color{
+        background: $bgGrillaCom;
+    }
+    .grillaCom__padding--boxModel{
+        padding-bottom: 60px;
+        padding-top: 60px;
+        .p__cardsCom--font{
+            color: white;
+            font-size: 14px;
+            margin: 0;    
+            text-align: center;
+        }
     }
 }
 
-.grillaCom__padding--boxModel{
-    padding-bottom: 60px;
-    padding-top: 60px;
-    @media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px){
+    .grillaCom__bg--color{
+        background: $verde;
+    }
+    .grillaCom__padding--boxModel{
         margin-right: 0px;
         margin-left: 0px;
         padding-bottom: 0px;
-        border-radius: 30px;
         padding-top: 5px;
         padding-left: 5px;
         padding-right: 5px;
+        a{
+            .h2GrillaCom__font--boxModel{
+                text-align: center;
+                position: relative;
+                top: 30px;
+                font-size: 40px;
+            
+            }
+        }
+        .p__cardsCom--font{
+            margin-bottom: -27px;
+            font-size: 13px;
+            color: white;
+            text-align: center;
+        }
+        
     }
 }
+
+
 
 .grillaCom__contenedor--flex{
     display: flex;
@@ -25,7 +52,7 @@
     justify-content: space-evenly;
     align-items: stretch;
     @media only screen and (max-width: 767px){
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
     }
 }
 
@@ -55,29 +82,13 @@
     // padding: 10px;
     position: relative;
     top: 30px;
+    font-size: 40px;
 
 }
 
-.pCom__pad--boxModel{
-    @media only screen and (min-width:1024px){
-        padding: 50px;
-    }
-    
-}
 
-.p__cardsCom--font{
-    color: white;
-    font-size: 15px;
-    margin: 0;
-    font-weight: bold;
-    padding: 30px;
-    text-align: center;
-    @media only screen and (max-width:767px){
-        margin-bottom: -27px;
-        font-size: 13px;
-        padding: 0;
-    }
-}
+
+
 
 .btn__cardCom--boxModel{
     padding-left: 0px;

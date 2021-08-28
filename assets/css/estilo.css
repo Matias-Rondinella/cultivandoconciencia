@@ -2310,6 +2310,12 @@ h1 {
   animation: color 2s ease-in .5s;
   color: #1e9d82;
   animation-iteration-count: infinite; }
+  @media only screen and (max-width: 767px) {
+    .h2Novedades {
+      text-align: center;
+      font-size: 35px;
+      background-color: #1e9d82;
+      margin: 0; } }
 
 .dropup,
 .dropright,
@@ -3382,8 +3388,8 @@ h1 {
   @media only screen and (max-width: 767px) {
     .navbar-light .navbar-toggler {
       background-image: url(../imagenes/logoculti.png);
-      width: 50%;
-      height: 80px; } }
+      display: flex;
+      flex-direction: row; } }
 
 .navbar-light .navbar-toggler-icon {
   color: #1e9d82;
@@ -3391,10 +3397,7 @@ h1 {
   @media only screen and (max-width: 767px) {
     .navbar-light .navbar-toggler-icon {
       background-image: url(../imagenes/logoculti.png);
-      font-size: xxx-large;
-      position: relative;
-      bottom: 9px;
-      right: 5px; } }
+      font-size: xxx-large; } }
 
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.5); }
@@ -7548,11 +7551,6 @@ a.text-dark:hover, a.text-dark:focus {
       font-size: 15px;
       color: whitesmoke; } }
 
-.h2Novedades {
-  text-align: center;
-  font-size: 45px;
-  color: whitesmoke; }
-
 @media only screen and (min-width: 1024px) {
   .footer {
     display: flex;
@@ -7773,33 +7771,44 @@ a.text-dark:hover, a.text-dark:focus {
   width: 1500px;
   border: 10px solid #1e9d82; }
 
-.grillaCom__bg--color {
-  background: linear-gradient(270deg, #00b9a9, #667be6); }
-  @media only screen and (max-width: 767px) {
-    .grillaCom__bg--color {
-      background: none; } }
+@media only screen and (min-width: 1024px) {
+  .grillaCom__bg--color {
+    background: linear-gradient(270deg, #00b9a9, #667be6); }
+  .grillaCom__padding--boxModel {
+    padding-bottom: 60px;
+    padding-top: 60px; }
+    .grillaCom__padding--boxModel .p__cardsCom--font {
+      color: white;
+      font-size: 14px;
+      margin: 0;
+      text-align: center; } }
 
-.grillaCom__padding--boxModel {
-  padding-bottom: 60px;
-  padding-top: 60px; }
-  @media only screen and (max-width: 767px) {
-    .grillaCom__padding--boxModel {
-      margin-right: 0px;
-      margin-left: 0px;
-      padding-bottom: 0px;
-      border-radius: 30px;
-      padding-top: 5px;
-      padding-left: 5px;
-      padding-right: 5px; } }
+@media only screen and (max-width: 767px) {
+  .grillaCom__bg--color {
+    background: #1e9d82; }
+  .grillaCom__padding--boxModel {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px; }
+    .grillaCom__padding--boxModel a .h2GrillaCom__font--boxModel {
+      text-align: center;
+      position: relative;
+      top: 30px;
+      font-size: 40px; }
+    .grillaCom__padding--boxModel .p__cardsCom--font {
+      margin-bottom: -27px;
+      font-size: 13px;
+      color: white;
+      text-align: center; } }
 
 .grillaCom__contenedor--flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: stretch; }
-  @media only screen and (max-width: 767px) {
-    .grillaCom__contenedor--flex {
-      margin-bottom: 20px; } }
 
 .grillaCom__contenedor--color {
   background: linear-gradient(45deg, #dddddd75, #1e9d82); }
@@ -7818,24 +7827,8 @@ a.text-dark:hover, a.text-dark:focus {
 .h2GrillaCom__font--boxModel {
   text-align: center;
   position: relative;
-  top: 30px; }
-
-@media only screen and (min-width: 1024px) {
-  .pCom__pad--boxModel {
-    padding: 50px; } }
-
-.p__cardsCom--font {
-  color: white;
-  font-size: 15px;
-  margin: 0;
-  font-weight: bold;
-  padding: 30px;
-  text-align: center; }
-  @media only screen and (max-width: 767px) {
-    .p__cardsCom--font {
-      margin-bottom: -27px;
-      font-size: 13px;
-      padding: 0; } }
+  top: 30px;
+  font-size: 40px; }
 
 .btn__cardCom--boxModel {
   padding-left: 0px;
@@ -7911,7 +7904,8 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 55px; }
   .h2Novedades {
     text-align: center;
-    padding-top: 50px; }
+    padding-top: 25px;
+    padding-bottom: 25px; }
   h3 {
     font-size: 40px;
     padding-bottom: 15px;
@@ -8078,6 +8072,12 @@ h1 {
   animation: color 2s ease-in .5s;
   color: #1e9d82;
   animation-iteration-count: infinite; }
+  @media only screen and (max-width: 767px) {
+    .h2Novedades {
+      text-align: center;
+      font-size: 35px;
+      background-color: #1e9d82;
+      margin: 0; } }
 
 @media only screen and (min-width: 1024px) {
   .slider2 {
@@ -8108,9 +8108,7 @@ h1 {
     .slider2 .slider2__div {
       display: flex;
       flex-direction: column;
-      align-items: center; }
-      .slider2 .slider2__div .slider2__img {
-        padding: 5px; } }
+      align-items: center; } }
 
 @media only screen and (min-width: 1024px) {
   .contenedorValores__title {

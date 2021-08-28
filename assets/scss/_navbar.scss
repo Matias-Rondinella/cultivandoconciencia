@@ -266,8 +266,10 @@
     border-color: $verde;
     @media only screen and (max-width: 767px){
       background-image: url(../imagenes/logoculti.png);
-      width: 50%;
-      height: 80px;
+      // width: 50%;
+      // height: 80px;
+      display: flex;
+      flex-direction: row;
     }
   }
 
@@ -277,9 +279,9 @@
     @media only screen and (max-width: 767px){
       background-image: url(../imagenes/logoculti.png);
       font-size: xxx-large;
-      position: relative;
-      bottom: 9px;
-      right: 5px;
+      // position: relative;
+      // bottom: 9px;
+      // right: 5px;
     }
   }
 

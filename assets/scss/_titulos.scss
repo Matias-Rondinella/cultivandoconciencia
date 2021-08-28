@@ -9,7 +9,8 @@ $vista:desktop;
         h2{font-size: 55px;}
         .h2Novedades {
             text-align: center;
-            padding-top: 50px;
+            padding-top: 25px;
+            padding-bottom: 25px;
             // font-size: 30px;
             }
         h3{font-size: 40px;
@@ -49,6 +50,12 @@ $vista:desktop;
             h1{font-size: 25px;
             font-family: 'Poppins', sans-serif;}
             h2{font-size: 22px;}
+            .h2Novedades {
+                text-align: center;
+                font-size: 45px;
+                color: $verde;
+                // font-size: 30px;
+                }
             h3{font-size: 20px;}
             h6{
                 font-size: 2.5rem;

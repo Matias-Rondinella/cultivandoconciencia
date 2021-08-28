@@ -175,4 +175,11 @@ h1 {
 .h2Novedades {
   animation: color 2s ease-in .5s;
   color:$verde;
-  animation-iteration-count: infinite;}
+  animation-iteration-count: infinite;
+  @media only screen and (max-width:767px){
+    text-align: center;
+    font-size: 35px;
+    background-color: $verde;
+    margin: 0;
+  }
+}
