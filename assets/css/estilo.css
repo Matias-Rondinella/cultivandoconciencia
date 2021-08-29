@@ -2327,7 +2327,8 @@ h1 {
       text-align: center;
       font-size: 35px;
       background-color: #1e9d82;
-      margin: 0; } }
+      margin: 0;
+      padding-bottom: 25px; } }
 
 .navbar-light .navbar-toggler {
   animation: bkgButton 10s ease-in .5s;
@@ -7555,7 +7556,8 @@ a.text-dark:hover, a.text-dark:focus {
       width: 40%;
       height: 40%;
       margin: 50px;
-      padding: 20px; }
+      padding: 20px;
+      margin-top: 0; }
       .cardsFlex .cardsFlex__card--size:hover {
         width: 50%;
         transition: 1s; }
@@ -7653,6 +7655,12 @@ a.text-dark:hover, a.text-dark:focus {
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 50px; }
+    @media only screen and (max-width: 767px) {
+      .grillaSem .grilla__flex {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        margin-bottom: -35px; } }
     .grillaSem .grilla__flex .cardFlex {
       position: relative;
       display: flex;
@@ -7662,9 +7670,6 @@ a.text-dark:hover, a.text-dark:focus {
     .grillaSem .grilla__flex .card__bg--color {
       background: #f5f376;
       width: 400px; }
-      @media only screen and (max-width: 767px) {
-        .grillaSem .grilla__flex .card__bg--color {
-          margin-bottom: 20px; } }
     .grillaSem .grilla__flex .card__border--radius {
       border-radius: 40px; }
       .grillaSem .grilla__flex .card__border--radius .card-img-top {
@@ -7805,7 +7810,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media only screen and (min-width: 1024px) {
   .grillaCom__bg--color {
-    background: linear-gradient(270deg, #00b9a9, #667be6); }
+    background: #1e9d82; }
   .grillaCom__padding--boxModel {
     padding-bottom: 60px;
     padding-top: 60px; }
@@ -7866,66 +7871,27 @@ a.text-dark:hover, a.text-dark:focus {
   padding-left: 0px;
   padding-right: 0px; }
 
-.form--boxModel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  @media only screen and (max-width: 767px) {
-    .form--boxModel {
-      padding-bottom: 35px;
-      padding: 25px; } }
-
-.form__input--boxModel {
-  width: 50%;
-  font-size: initial; }
-  @media only screen and (max-width: 767px) {
-    .form__input--boxModel {
-      overflow: visible;
-      width: 100%;
-      font-size: initial; } }
-
 @media only screen and (min-width: 1024px) {
-  .form__fieldset--flex {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: center; } }
+  .iframeCont {
+    padding: 100px;
+    background-color: #1e9d82; }
+    .iframeCont .iframeCont__boxModel {
+      border: 12px #298904 solid;
+      height: 500px;
+      border-radius: 10px; } }
 
-.form__legend--font {
-  text-align: center; }
-  @media only screen and (max-width: 767px) {
-    .form__legend--font {
-      text-align: center; } }
-
-.form__input--boxModel {
-  width: 50%; }
-  @media only screen and (max-width: 767px) {
-    .form__input--boxModel {
-      overflow: visible;
-      width: 100%; } }
-
-.form__buttom--flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%; }
-  @media only screen and (max-width: 767px) {
-    .form__buttom--flex {
-      display: flex;
-      flex-direction: column; } }
-
-.form__input--color {
-  background: #f5f376;
-  width: 50%;
-  height: 30px; }
-
-.iframe__map--boxModel {
-  border: 5px yellow solid;
-  height: 507px; }
-  @media only screen and (max-width: 767px) {
-    .iframe__map--boxModel {
-      width: 320px;
+@media only screen and (max-width: 767px) {
+  .iframeCont {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #1e9d82; }
+    .iframeCont .iframeCont__form--boxModel {
+      padding: 0px 15px 40px 15px; }
+    .iframeCont .iframeCont__boxModel {
+      border: 12px #298904 solid;
+      height: 500px;
+      border-radius: 10px;
+      width: 95%;
       height: 320px; } }
 
 @media only screen and (min-width: 1024px) {
@@ -7937,7 +7903,8 @@ a.text-dark:hover, a.text-dark:focus {
   .h2Novedades {
     text-align: center;
     padding-top: 25px;
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    margin: 0; }
   h3 {
     font-size: 40px;
     padding-bottom: 15px;
@@ -8121,7 +8088,8 @@ h1 {
       text-align: center;
       font-size: 35px;
       background-color: #1e9d82;
-      margin: 0; } }
+      margin: 0;
+      padding-bottom: 25px; } }
 
 .navbar-light .navbar-toggler {
   animation: bkgButton 10s ease-in .5s;

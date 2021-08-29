@@ -4,6 +4,12 @@
         padding-left: 40px;
         padding-right: 40px;
         padding-bottom: 50px;
+        @media only screen and (max-width:767px) {
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 40px;
+            margin-bottom: -35px;
+        }
         .cardFlex{
             position: relative;
             display: flex;
@@ -13,11 +19,7 @@
         }
         .card__bg--color{
             background: $amarillo;
-            width: 400px;
-            @media only screen and (max-width:767px){
-                margin-bottom: 20px;
-            }
-            
+            width: 400px;                        
         }
         .card__border--radius{
             border-radius: 40px;
