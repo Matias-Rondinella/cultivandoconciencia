@@ -13,7 +13,9 @@
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
   },
-  "dependencies": {},
+  "dependencies": {
+    "simplescrollup": "^1.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Matias-Rondinella/cultivandoconciencia.git"
