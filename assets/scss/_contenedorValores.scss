@@ -29,10 +29,13 @@
     .contenedorValores__title{
         background: #1e9d82;
         padding-top: 50px;
+        h4{
+            font-size: 30px;
+        }
     }
     .contenedorValores{
         background-color: #1e9d82;
-        padding: 50px 0px 50px 0px;
+        padding: 50px 0px 0px 0px;
         .contenedorValores__card{
             display: flex;
             flex-direction: column;
@@ -40,7 +43,11 @@
             justify-content: center;
             // padding: 0px 75px 0px 75px;
             img{
-                width: 120px;
+                width: 115px;
+                padding-bottom: 10px;
+            }
+            h6{
+                font-size: 20px;
             }
             
             p{

@@ -4835,20 +4835,21 @@ a.close.disabled {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: whitesmoke;
     text-align: center;
     top: -5px;
     right: 0;
     left: 0;
     bottom: 20px;
-    padding: 20px 50px 20px 50px; }
+    padding: 20px 48px 20px 48px; }
     .carousel-caption h5 {
       text-shadow: 3px 3px 3px #0c0e0c, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
-      font-size: 30px; }
+      font-size: 27px;
+      width: 300px;
+      color: #f5f376; }
     .carousel-caption p {
       font-size: 15px; }
-    .carousel-caption .pMobSlider {
-      padding: 0px 50px 0px 50px; }
     .carousel-caption a {
       width: 150px;
       position: relative;
@@ -7484,7 +7485,8 @@ a.text-dark:hover, a.text-dark:focus {
       .menu .header__logo .h1__logo--font {
         font-size: 26px;
         position: relative;
-        right: 27px; }
+        right: 27px;
+        text-shadow: 3px 3px 3px #0c0e0c, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black; }
     .menu .navbar {
       width: 100%;
       display: flex;
@@ -7509,7 +7511,7 @@ a.text-dark:hover, a.text-dark:focus {
     flex-direction: row;
     background: #1e9d82;
     align-items: center;
-    justify-content: space-evenly; }
+    justify-content: center; }
     .article .article__div {
       position: relative;
       right: 60px; }
@@ -7911,13 +7913,14 @@ a.text-dark:hover, a.text-dark:focus {
     color: #1e9d82; }
   h4 {
     font-size: 3.5rem;
-    color: whitesmoke; }
+    color: #000; }
   h5 {
     font-size: 60px;
     position: relative; }
   h6 {
     font-size: 25px;
-    color: whitesmoke; }
+    color: whitesmoke;
+    padding-top: 15px; }
   p {
     font-family: 'Azeret Mono', monospace;
     font-size: 22px; }
@@ -8124,7 +8127,10 @@ h1 {
     .slider2 .slider2__div {
       display: flex;
       flex-direction: column;
-      align-items: center; } }
+      align-items: center;
+      padding-bottom: 15px; }
+      .slider2 .slider2__div .slider2__img {
+        padding: 10px; } }
 
 @media only screen and (min-width: 1024px) {
   .contenedorValores__title {
@@ -8150,16 +8156,21 @@ h1 {
   .contenedorValores__title {
     background: #1e9d82;
     padding-top: 50px; }
+    .contenedorValores__title h4 {
+      font-size: 30px; }
   .contenedorValores {
     background-color: #1e9d82;
-    padding: 50px 0px 50px 0px; }
+    padding: 50px 0px 0px 0px; }
     .contenedorValores .contenedorValores__card {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; }
       .contenedorValores .contenedorValores__card img {
-        width: 120px; }
+        width: 115px;
+        padding-bottom: 10px; }
+      .contenedorValores .contenedorValores__card h6 {
+        font-size: 20px; }
       .contenedorValores .contenedorValores__card p {
         text-align: center;
         padding-right: 80px;
@@ -8220,6 +8231,16 @@ html {
 @media only screen and (max-width: 767px) {
   .disNoMob {
     display: none; } }
+
+@media only screen and (min-width: 1024px) {
+  i {
+    font-size: 22px;
+    color: aquamarine; } }
+
+@media only screen and (max-width: 767px) {
+  i {
+    font-size: 18px;
+    color: aquamarine; } }
 
 body {
   background: #3b97d4; }
