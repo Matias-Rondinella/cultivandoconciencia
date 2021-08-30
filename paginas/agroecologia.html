@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,12 +24,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Mi CSS -->
     <link rel="stylesheet" href="../assets/css/estilo.css">
 </head>
-<body class="bodyTransition">
+<body data-aos="fade-down" data-aos-delay="50px">
     <a href="#flechaArriba" class="flechaSubir disNoMob"><img src="../assets/imagenes/flecha-hacia-arriba.svg" alt="Subir" style="width: 80px;"></a>
     <div class="container-fluid" style="padding: 0px;overflow: hidden;">
         <!-- Comienzo de Header -->
@@ -69,11 +71,11 @@
         </div>
         <!--Cierre de Header-->
         <!-- Comienzo Seccion Texto-->
-        <div class="row">
+        <div class="row" data-aos="fade-down">
           <div>
               <section>
                   <article class="article flex-row-reverse">
-                    <img src="../assets/imagenes/farmer1.svg" alt="agricultor" class="img-fluid__agricultor bodyTransition disNoMob" style="padding: 25px;">
+                    <img src="../assets/imagenes/farmer1.svg" alt="agricultor" class="img-fluid__agricultor imgAgricultorTransition disNoMob" style="padding: 25px;">
                     <div class="col-lg-8 col-xs-12 article__div">
                       <h2 class="article__h2--font fontTitlesMob">Agroecología</h2>
                       <p class="article__txt--font">Impulsamos prácticas de <i>agricultura en el hogar</i> facilitando herramientas para el cultivo de alimentos, plantas nativas y aromáticas generando así mayor <i>biodiversidad</i>. Además, profundizamos en técnicas de reciclaje y de gestión de residuos, como compost, botellas de amor y separación.
@@ -84,8 +86,8 @@
           </div>
         </div>
         <!-- Fin Seccion Texto -->
-        <div class="row justify-content-around contenedorNoticias">
-          <div class="col-sm-5">
+        <div class="row justify-content-around contenedorNoticias" data-aos="fade-down">
+          <div class="col-sm-5" data-aos="fade-down">
             <div class="card">
               <div class="card-body">
                 <a href="https://inta.gob.ar/sites/default/files/inta_-_mi_casa-_mi_huerta.pdf" target="_blank" class="card__body--img"><img src="../assets/imagenes/noticias1.jpg" alt="noticias1"></a>
@@ -95,7 +97,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-5">
+          <div class="col-sm-5" data-aos="fade-down">
             <div class="card">
               <div class="card-body">
                 <a href="http://www.latierrahabla.org.ar/wp/wp-content/uploads/2013/09/eco2eporteous_pnativas2.pdf" target="_blank" class="card__body--img"><img src="../assets/imagenes/noticias2.jpg" alt="noticias2" style="width: 100%;" class="img-fluid"></a>
@@ -106,8 +108,8 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-around contenedorNoticias" style="padding-top: 0px;">
-          <div class="col-sm-5">
+        <div class="row justify-content-around contenedorNoticias" style="padding-top: 0px;" data-aos="fade-down">
+          <div class="col-sm-5" data-aos="fade-down">
             <div class="card">
               <div class="card-body">
                 <a href="https://www.bioguia.com/hogar/botellas-amor_73021926.html" target="_blank" class="card__body--img"><img src="../assets/imagenes/noticias4.jpg" alt="noticias3" style="width: 100%;"></a>
@@ -117,7 +119,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-5 paddingBotNoti">
+          <div class="col-sm-5 paddingBotNoti" data-aos="fade-down">
             <div class="card">
               <div class="card-body">
                 <a href="https://www.argentina.gob.ar/sites/default/files/instructivo_para_la_produccion_de_compost_domiciliario.pdf" target="_blank" class="card__body--img"><img src="../assets/imagenes/noticias3.jpg" alt="noticias1" style="width: 100%;"></a>
@@ -129,8 +131,8 @@
           </div>
         </div>
       <!--Inicio Grilla Inputs Video-->
-      <div class="row row-cols-1 row-cols-lg-2 grilla__bg--color">
-        <div class="col-lg-6 col-xs-12 grilla__iframes--flex">
+      <div class="row row-cols-1 row-cols-lg-2 grilla__bg--color" data-aos="fade-down">
+        <div class="col-lg-6 col-xs-12 grilla__iframes--flex" data-aos="fade-down">
           <div class="card cardsAgro--boxModel card__bg--color cardsAgro--flex">
             <iframe class="img-fluid iframeVideo--boxModel" width="560" height="315" src="https://www.youtube.com/embed/LQtuCDRqgZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="card-body cardAgro__body--flex">
@@ -139,7 +141,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-xs-12 grilla__iframes--flex">
+        <div class="col-lg-6 col-xs-12 grilla__iframes--flex" data-aos="fade-down">
           <div class="card cardsAgro--boxModel card__bg--color cardsAgro--flex">
             <iframe class="img-fluid iframeVideo--boxModel" width="560" height="315" src="https://www.youtube.com/embed/b993Pp58plk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="card-body cardAgro__body--flex">
@@ -148,7 +150,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-xs-12 grilla__iframes--flex">
+        <div class="col-lg-6 col-xs-12 grilla__iframes--flex" data-aos="fade-down">
           <div class="card cardsAgro--boxModel card__bg--color cardsAgro--flex">
             <iframe class="img-fluid iframeVideo--boxModel" width="560" height="315" src="https://www.youtube.com/embed/NMkYlMhZmhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="card-body cardAgro__body--flex">
@@ -157,7 +159,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-xs-12 grilla__iframes--flex">
+        <div class="col-lg-6 col-xs-12 grilla__iframes--flex" data-aos="fade-down">
           <div class="card cardsAgro--boxModel card__bg--color cardsAgro--flex">
             <iframe class="img-fluid iframeVideo--boxModel" width="560" height="315" src="https://www.youtube.com/embed/fic7RuRly7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="card-body cardAgro__body--flex">
@@ -171,22 +173,22 @@
       <!-- Inicio de Seccion Novedades -->        
       <div>
         <div>
-          <h2 class="h2Novedades">Novedades</h2>
+          <h2 class="h2Novedades" data-aos="fade-down">Novedades</h2>
         </div>
-          <div class="cardsFlex">
-              <div class="card cardsFlex__card--size cards__bg--color">
+          <div class="cardsFlex" data-aos="fade-down">
+              <div class="card cardsFlex__card--size cards__bg--color" data-aos="fade-down">
                   <a href="error404.html"><img src="../assets/imagenes/novedades2.jpg"  alt="novedades2" class="img-fluid"></a>
                   <div class="card-body">
                     <p class="card-text card__text--size">Nos visitó "Inti, Sabores Artesanales"</p>
                   </div>
               </div>
-              <div class="card cardsFlex__card--size cards__bg--color">
+              <div class="card cardsFlex__card--size cards__bg--color" data-aos="fade-down">
                 <a href="error404.html"><img src="../assets/imagenes/novedades3.jpg"  alt="novedades3" class="img-fluid"></a>
                   <div class="card-body">
                     <p class="card-text card__text--boxModel">Jornada de concientización en familia</p>
                   </div>
               </div>
-              <div class="card cardsFlex__card--size cards__bg--color">
+              <div class="card cardsFlex__card--size cards__bg--color" data-aos="fade-down">
                 <a href="error404.html"><img src="../assets/imagenes/novedades4.jpg"  alt="novedades4" class="img-fluid"></a>
                   <div class="card-body">
                     <p class="card-text card__text--boxModel">Llega otro encuentro de Fogón y Jam</p>
@@ -196,7 +198,7 @@
       </div>
       <!--Fin de Seccion Novedades-->
       <!--Inicio de Footer-->
-      <div class="row">
+      <div class="row" data-aos="fade-down">
         <div class="col-lg-12 col-xs-12">
           <footer class="footer">
             <div style="display: contents;">
@@ -232,6 +234,10 @@
       </div>
       <!-- Cierre de Footer -->
   </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
