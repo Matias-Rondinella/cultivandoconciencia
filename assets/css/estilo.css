@@ -8230,11 +8230,25 @@ h1 {
 
 @media only screen and (min-width: 1024px) {
   .divError {
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 250px; }
     .divError .divError__h1 {
       color: black; }
+    .divError a .divError__btn {
+      font-size: 20px; } }
+
+@media only screen and (max-width: 767px) {
+  .divError {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 55px; }
+    .divError .divError__h1 {
+      color: black; }
+    .divError p {
+      font-size: 14px; }
     .divError a .divError__btn {
       font-size: 20px; } }
 
