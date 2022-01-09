@@ -1,1 +1,1 @@
-prompt (nombreUsuario + ", " + "¿Quieres subscribirte a nuestras redes?")
+alert (nombreUsuario + ", " + "¿Quieres subscribirte a nuestras redes?")
