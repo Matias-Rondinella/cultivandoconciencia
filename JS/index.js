@@ -17,6 +17,16 @@ if ((nombreUsuario >= 0) || (nombreUsuario <= 0)) {
     alert ("Bienvenido/a " + nombreUsuario)
 }
 
+let respPlaneta = prompt ("¿Quieres subscribirte a nuestras redes?")
+
+if (((respPlaneta == "SI") || (respPlaneta == "si") || (respPlaneta == "Si"))) {
+    let correoUsu = prompt ("Ingresa tu direccion de correo electronico")
+    alert ("Gracias " + nombreUsuario + ". Pronto nos pondremos en contacto a: " + correoUsu)
+    
+} else if (((respPlaneta == "NO") || (respPlaneta == "no") || (respPlaneta == "No"))) {
+    alert ("Esperamos poder contar contigo pronto. Hasta pronto")
+}
+
 
 
 
