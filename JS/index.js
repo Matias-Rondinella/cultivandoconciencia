@@ -11,5 +11,4 @@ let nombreUsuario = prompt ("¿Cual es tu nombre?")
 alert ("Bienvenido/a " + nombreUsuario)
 prompt (nombreUsuario + "," + " ¿Quieres aprender a cuidar mejor de nuestro planeta?")
 alert ("Pues manos a la obra")
-const nombreUsuario
 console.log(nombreUsuario)
