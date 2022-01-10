@@ -6,15 +6,21 @@
 
 //console.log (datoUsuario)
 
-let nombreUsuario = prompt ("Bienvenido, ingrese su nombre")
-if (nombreUsuario > 0) {
-    alert("Por favor, ingrese un nombre valido")
-    
-} else if ((nombreUsuario < 10000) || (nombreUsuario == Number)) {
+let nombreUsuario =  prompt ("Ingrese su nombre")
+if ((nombreUsuario >= 0) || (nombreUsuario <= 0)) {
     alert ("Por favor, ingrese un nombre valido")
-} else{
+    
+} /*else if (nombreUsuario < 0){
+    alert ("Por favor, ingrese un nombre valido")
+
+}*/ else {
     alert ("Bienvenido/a " + nombreUsuario)
 }
+
+
+
+
+
 
 
 
