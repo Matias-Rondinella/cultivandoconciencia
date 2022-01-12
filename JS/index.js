@@ -32,27 +32,27 @@ else{
 
 let nombreUsuario =  prompt ("Ingrese su nombre")
 
-while (nombreUsuario >= 0) {
+while (((nombreUsuario >= 0)) || ((nombreUsuario === "."))) {
     alert ("Ingresa un nombre valido");
     nombreUsuario=prompt ("Ingrese su nombre")    
 }
 
-alert ("Bienvenido, " + nombreUsuario)
+alert ("Bienvenido/a, " + nombreUsuario)
 
 let respPlaneta = prompt ("¿Quieres subscribirte a nuestras redes?")
 
 while (respPlaneta == null) {
-    alert (nombreUsuario + " Esperamos poder contar contigo pronto.")
+    alert ("Esperamos poder contar contigo pronto " + nombreUsuario + ".")
     break;
     
 }
 
 if (((respPlaneta == "SI") || (respPlaneta == "si") || (respPlaneta == "Si"))) {
     let correoUsu = prompt ("Ingresa tu direccion de correo electronico")
-    alert ("Gracias " + nombreUsuario + ". Pronto nos pondremos en contacto a: " + correoUsu)
+    confirm ("Gracias " + nombreUsuario + ". Pronto nos pondremos en contacto a: " + correoUsu)
     
 } else if (((respPlaneta == "NO") || (respPlaneta == "no") || (respPlaneta == "No"))) {
-    alert (nombreUsuario + " Esperamos poder contar contigo pronto.")
+    alert ("Esperamos poder contar contigo pronto " + nombreUsuario + ".")
 }
 
 
