@@ -6,11 +6,22 @@
 
 //console.log (datoUsuario)
 
+/*prompt de inicio en index*/
 
 alert ("Bienvenidos a nuestra comunidad")
-alert("Te vamos a pedir unos datos")
 let nombreUsuario = prompt ("¿Cual es tu nombre?")
 alert ("Bienvenido/a " + nombreUsuario)
-prompt (nombreUsuario + "," + " ¿Quieres aprender a cuidar mejor de nuestro planeta?")
-alert ("Pues manos a la obra")
 console.log(nombreUsuario)
+
+
+if (nombreUsuario == ""){
+    alert ("No ingresaste un nombre")
+
+}
+else if () {
+    alert ("Ingresa un nombre valido")
+}
+else{
+    prompt (nombreUsuario + "," + " ¿Quieres aprender a cuidar mejor de nuestro planeta?")
+    alert ("Pues manos a la obra")
+}
