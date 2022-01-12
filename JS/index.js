@@ -32,10 +32,7 @@ let nombreUsuario =  prompt ("Ingrese su nombre")
 if ((nombreUsuario >= 0) || (nombreUsuario <= 0)) {
     alert ("Por favor, ingrese un nombre valido")
     
-} /*else if (nombreUsuario < 0){
-    alert ("Por favor, ingrese un nombre valido")
-
-}*/ else {
+} else {
     alert ("Bienvenido/a " + nombreUsuario)
 }
 
@@ -46,7 +43,7 @@ if (((respPlaneta == "SI") || (respPlaneta == "si") || (respPlaneta == "Si"))) {
     alert ("Gracias " + nombreUsuario + ". Pronto nos pondremos en contacto a: " + correoUsu)
     
 } else if (((respPlaneta == "NO") || (respPlaneta == "no") || (respPlaneta == "No"))) {
-    alert ("Esperamos poder contar contigo pronto. Hasta pronto")
+    alert (nombreUsuario + " Esperamos poder contar contigo pronto.")
 }
 
 
