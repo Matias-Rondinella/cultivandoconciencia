@@ -6,28 +6,8 @@
 
 //console.log (datoUsuario)
 
-//<<<<<<< HEAD
-/*prompt de inicio en index*/
-
-/* alert ("Bienvenidos a nuestra comunidad")
-let nombreUsuario = prompt ("¿Cual es tu nombre?")
-alert ("Bienvenido/a " + nombreUsuario)
-console.log(nombreUsuario)
-
-
-if (nombreUsuario == ""){
-    alert ("No ingresaste un nombre")
-
-}
-else if () {
-    alert ("Ingresa un nombre valido")
-}
-else{
-    prompt (nombreUsuario + "," + " ¿Quieres aprender a cuidar mejor de nuestro planeta?")
-    alert ("Pues manos a la obra")
-}*/
-//=======
-
+/* ACA ESTAN LOS MENSAJES DE INICIO DEL HOME */
+/*CICLOS HECHOS CON WHILE*/
 
 
 let nombreUsuario =  prompt ("Ingrese su nombre")
@@ -41,9 +21,10 @@ alert ("Bienvenido/a, " + nombreUsuario)
 
 let respPlaneta = prompt ("¿Quieres subscribirte a nuestras redes?")
 
-while (respPlaneta == null) {
-    alert ("Esperamos poder contar contigo pronto " + nombreUsuario + ".")
-    break;
+while ((respPlaneta == null) || (respPlaneta === ".")) {
+
+    alert ("Ingresa una respuesta valida")
+    respPlaneta = prompt ("¿Quieres subscribirte a nuestras redes?")
     
 }
 
