@@ -28,15 +28,24 @@ else{
 }*/
 //=======
 
+
+
 let nombreUsuario =  prompt ("Ingrese su nombre")
-if ((nombreUsuario >= 0) || (nombreUsuario <= 0)) {
-    alert ("Por favor, ingrese un nombre valido")
-    
-} else {
-    alert ("Bienvenido/a " + nombreUsuario)
+
+while (nombreUsuario >= 0) {
+    alert ("Ingresa un nombre valido");
+    nombreUsuario=prompt ("Ingrese su nombre")    
 }
 
+alert ("Bienvenido, " + nombreUsuario)
+
 let respPlaneta = prompt ("¿Quieres subscribirte a nuestras redes?")
+
+while (respPlaneta == null) {
+    alert (nombreUsuario + " Esperamos poder contar contigo pronto.")
+    break;
+    
+}
 
 if (((respPlaneta == "SI") || (respPlaneta == "si") || (respPlaneta == "Si"))) {
     let correoUsu = prompt ("Ingresa tu direccion de correo electronico")
@@ -45,6 +54,8 @@ if (((respPlaneta == "SI") || (respPlaneta == "si") || (respPlaneta == "Si"))) {
 } else if (((respPlaneta == "NO") || (respPlaneta == "no") || (respPlaneta == "No"))) {
     alert (nombreUsuario + " Esperamos poder contar contigo pronto.")
 }
+
+
 
 
 
