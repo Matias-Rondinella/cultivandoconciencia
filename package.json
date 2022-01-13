@@ -11,7 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "prettier": "2.5.1"
   },
   "dependencies": {
     "save": "^2.4.0",

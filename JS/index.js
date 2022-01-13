@@ -1,3 +1,5 @@
+/*CONCATENACION DE VARIABLES*/
+
 //let nombre = "";
 //let edad = 0;
 //let pais = "";
@@ -19,6 +21,7 @@ while (((nombreUsuario >= 0)) || ((nombreUsuario === "."))) {
 
 alert("Bienvenido/a, " + nombreUsuario)
 console.log(nombreUsuario)
+
 let respPlaneta = prompt("¿Quieres subscribirte a nuestras redes?")
 
 while ((respPlaneta == null) || (respPlaneta === ".")) {
