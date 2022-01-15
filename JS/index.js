@@ -34,9 +34,11 @@ while ((respPlaneta == null) || (respPlaneta === ".")) {
 if (((respPlaneta == "SI") || (respPlaneta == "si") || (respPlaneta == "Si"))) {
     let correoUsu = prompt("Ingresa tu direccion de correo electronico")
     confirm("Gracias " + nombreUsuario + ". Pronto nos pondremos en contacto a: " + correoUsu)
+    
 
 } else if (((respPlaneta == "NO") || (respPlaneta == "no") || (respPlaneta == "No"))) {
     alert("Esperamos poder contar contigo pronto " + nombreUsuario + ".")
+    
 }
 
 
