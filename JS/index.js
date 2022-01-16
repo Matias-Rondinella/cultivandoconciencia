@@ -14,7 +14,7 @@
 
 let nombreUsuario = prompt("Ingrese su nombre")
 
-while (((nombreUsuario >= 0)) || ((nombreUsuario === "."))) {
+while (((nombreUsuario >= 0) || (nombreUsuario === ".")) || (nombreUsuario === null)) {
     alert("Ingresa un nombre valido");
     nombreUsuario = prompt("Ingrese su nombre")
 }
@@ -22,21 +22,30 @@ while (((nombreUsuario >= 0)) || ((nombreUsuario === "."))) {
 alert("Bienvenido/a, " + nombreUsuario)
 console.log(nombreUsuario)
 
-let respPlaneta = prompt("¿Quieres subscribirte a nuestras redes?")
+let subsQ = prompt("¿Quieres subscribirte a nuestras redes?")
 
-while ((respPlaneta == null) || (respPlaneta === ".")) {
+while (((subsQ === null) || (subsQ === ".")) || (subsQ <= 0)) {
 
     alert("Ingresa una respuesta valida")
-    respPlaneta = prompt("¿Quieres subscribirte a nuestras redes?")
+    subsQ = prompt("¿Quieres subscribirte a nuestras redes?")
 
 }
 
-if (((respPlaneta == "SI") || (respPlaneta == "si") || (respPlaneta == "Si"))) {
-    let correoUsu = prompt("Ingresa tu direccion de correo electronico")
-    confirm("Gracias " + nombreUsuario + ". Pronto nos pondremos en contacto a: " + correoUsu)
-    
+if (((subsQ == "SI") || (subsQ == "si") || (subsQ == "Si"))) {
 
-} else if (((respPlaneta == "NO") || (respPlaneta == "no") || (respPlaneta == "No"))) {
+    let correoUsu = prompt("Ingresa tu direccion de correo electronico")   
+
+    while (((correoUsu === "") || ((correoUsu >= 0)) || ((correoUsu === "ESC")) || (correoUsu === null))) {
+
+        alert("ingresa un email valido")
+        correoUsu = prompt ("Ingresa tu email de nuevo");
+
+    }   
+
+confirm("Gracias " + nombreUsuario + ". Pronto nos pondremos en contacto a: " + correoUsu);
+console.log (correoUsu);   
+    
+} else if (((subsQ == "NO") || (subsQ == "no") || (subsQ == "No"))) {
     alert("Esperamos poder contar contigo pronto " + nombreUsuario + ".")
     
 }
