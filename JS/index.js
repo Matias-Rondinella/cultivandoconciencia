@@ -9,7 +9,7 @@
 //console.log (datoUsuario)
 
 /* ACA ESTAN LOS MENSAJES DE INICIO DEL HOME */
-/*CICLOS HECHOS CON WHILE*/
+/*CICLOS HECHOS CON WHILE*/ 
 
 
 let nombreUsuario = prompt("Ingrese su nombre")

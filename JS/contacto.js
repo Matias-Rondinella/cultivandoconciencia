@@ -11,7 +11,7 @@ while (edad <=17) {
     alert ("Acceso restringido. Debes ser mayor de edad")
     edad = prompt("¿Que edad tienes?")    
 }
-
+ 
 confirm ("Dejanos tu consulta y pronto nos comunicaremos")
     
 
