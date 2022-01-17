@@ -14,127 +14,144 @@
 @import "sliderB";
 @import "contenedorValores";
 @import "contenedorNoticias";
-@import "error404.scss";
-
+@import "error404";
 
 * {
-    margin: 0;
-    padding: 0; }
-  
-html {
-    font-size: 62.5%; }
-
-.disNoMob{
-    @media only screen and (max-width: 767px){
-        display: none;
-    }
+  margin: 0;
+  padding: 0;
 }
 
-i{
-    @media only screen and (min-width:1024px){
-        font-size: 20px;
-        color: aquamarine;
-    }
-    @media only screen and (max-width: 767px){
-        font-size: 18px;
-        color: aquamarine;
-    }
+html {
+  font-size: 62.5%;
+}
+
+.disNoMob {
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+i {
+  @media only screen and (min-width: 1024px) {
+    font-size: 20px;
+    color: aquamarine;
+  }
+  @media only screen and (max-width: 767px) {
+    font-size: 18px;
+    color: aquamarine;
+  }
 }
 #scroll {
-    position:fixed;
-    right:10px;
-    bottom:10px;
-    cursor:pointer;
-    width:50px;
-    height:50px;
-    background-color:#3498db;
-    text-indent:-9999px;
-    display:none;
-    -webkit-border-radius:60px;
-    -moz-border-radius:60px;
-    border-radius:60px
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  text-indent: -9999px;
+  display: none;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
 }
 #scroll span {
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin-left:-8px;
-    margin-top:-12px;
-    height:0;
-    width:0;
-    border:8px solid transparent;
-    border-bottom-color:#ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #ffffff;
 }
 #scroll:hover {
-    background-color:#e74c3c;
-    opacity:1;filter:"alpha(opacity=100)";
-    -ms-filter:"alpha(opacity=100)";
+  background-color: #e74c3c;
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)";
 }
 
-
-  
-body{
-    background: $bgG;    
-    @media only screen and (max-width:767px){
-        .flechaSubir{
-            position: sticky;
-            z-index: 10;
-            top: 585px;
-            right: 15px;
-            // width: 50%;
-            img{
-                position: sticky;
-            }
-            }
-        }
-    @media only screen and (min-width: 1024px){
-        .flechaSubir{
-            left: 1800px;
-            top: 890px;
-            position: sticky;
-            z-index: 10;
-            // width: 50%;
-            img{ /*estas animaciones mueven d un lado a otro el objeto que las tenga*/
-                position: absolute;
-                animation: expand .8s cubic-bezier(0.43, 0.28, 0.24, 0.35) forwards .5s;
-                animation-iteration-count: infinite;
-                animation-duration: 1s;
-                animation-direction: alternate-reverse;
-                @keyframes expand {
-                    0% {
-                        transform: translateX(10px);
-                    }
-                    100% {
-                        transform: translateX(0px);
-                    }
-                }
-            }
-        }
-                  
+body {
+  background: $bgG;
+  @media only screen and (max-width: 767px) {
+    .flechaSubir {
+      position: sticky;
+      z-index: 10;
+      top: 585px;
+      right: 15px;
+      // width: 50%;
+      img {
+        position: sticky;
+      }
     }
-}
-
-
-.grilla--flex{
-    @media only screen and (max-width:767px){
-        padding: 48px;
-        padding-top: 0;
-        padding-bottom: 0;
+  }
+  @media only screen and (min-width: 1024px) {
+    .flechaSubir {
+      left: 1800px;
+      top: 890px;
+      position: sticky;
+      z-index: 10;
+      // width: 50%;
+      img {
+        /*estas animaciones mueven d un lado a otro el objeto que las tenga*/
+        position: absolute;
+        animation: expand 0.8s cubic-bezier(0.43, 0.28, 0.24, 0.35) forwards
+          0.5s;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        animation-direction: alternate-reverse;
+        @keyframes expand {
+          0% {
+            transform: translateX(10px);
+          }
+          100% {
+            transform: translateX(0px);
+          }
+        }
+      }
     }
-    
+  }
 }
 
-
+.grilla--flex {
+  @media only screen and (max-width: 767px) {
+    padding: 48px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 
 @mixin button-variant(
   $background,
   $border,
   $color: color-contrast($background),
-  $hover-background: if($color == $color-contrast-light, shade-color($background, $btn-hover-bg-shade-amount), tint-color($background, $btn-hover-bg-tint-amount)),
-  $hover-border: if($color == $color-contrast-light, shade-color($border, $btn-hover-border-shade-amount), tint-color($border, $btn-hover-border-tint-amount)),
+  $hover-background:
+    if(
+      $color == $color-contrast-light,
+      shade-color($background, $btn-hover-bg-shade-amount),
+      tint-color($background, $btn-hover-bg-tint-amount)
+    ),
+  $hover-border:
+    if(
+      $color == $color-contrast-light,
+      shade-color($border, $btn-hover-border-shade-amount),
+      tint-color($border, $btn-hover-border-tint-amount)
+    ),
   $hover-color: color-contrast($hover-background),
-  $active-background: if($color == $color-contrast-light, shade-color($background, $btn-active-bg-shade-amount), tint-color($background, $btn-active-bg-tint-amount)),
-  $active-border: if($color == $color-contrast-light, shade-color($border, $btn-active-border-shade-amount), tint-color($border, $btn-active-border-tint-amount)),
+  $active-background:
+    if(
+      $color == $color-contrast-light,
+      shade-color($background, $btn-active-bg-shade-amount),
+      tint-color($background, $btn-active-bg-tint-amount)
+    ),
+  $active-border:
+    if(
+      $color == $color-contrast-light,
+      shade-color($border, $btn-active-border-shade-amount),
+      tint-color($border, $btn-active-border-tint-amount)
+    ),
   $active-color: color-contrast($active-background),
   $disabled-background: $background,
   $disabled-border: $border,
@@ -149,4 +166,5 @@ body{
     color: $hover-color;
     @include gradient-bg($hover-background);
     border-color: $hover-border;
-  }}
+  }
+}
