@@ -12,7 +12,7 @@
 /*CICLOS HECHOS CON WHILE*/ 
 
 
-let nombreUsuario = prompt("Ingrese su nombre")
+/* let nombreUsuario = prompt("Ingrese su nombre")
 
 while (((nombreUsuario >= 0) || (nombreUsuario === ".")) || (nombreUsuario === null)) {
     alert("Ingresa un nombre valido");
@@ -48,7 +48,51 @@ console.log (correoUsu);
 } else if (((subsQ == "NO") || (subsQ == "no") || (subsQ == "No"))) {
     alert("Esperamos poder contar contigo pronto " + nombreUsuario + ".")
     
+} */
+
+
+//
+
+function Impuestos (precioCosto, iva) {
+    
+    this.precioFinal = parseFloat (precioCosto * iva); 
+    console.log (precioFinal);
+    
 }
+Impuestos (175, 1.21);
+
+//
+
+function stockTotal(stock, vendido,) {
+    
+    this.total = parseInt (stock - vendido);
+    
+    if (total < 0) {
+        console.log ("Stock Agotado.")
+        console.log ("Stock disponible: " + stock + " Unidades");
+    } else if (total >= 0) {
+        console.log ("Producto Agregado");
+        console.log ("Agregaste: " + vendido + " productos."); 
+        console.log ("Quedan " + total + " productos.");       
+    }
+    
+    
+}
+stockTotal (5, 0);
+
+//
+
+function Descript(detalles, productor,) {
+
+    this.caract = detalles + productor;
+
+    console.log(caract);   
+    
+}
+Descript("Vino Organico Bla, " + "Agroecológicos MG.");
+
+//
+
 
 
 
