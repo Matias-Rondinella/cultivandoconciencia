@@ -55,17 +55,16 @@ console.log (correoUsu);
 
 function Impuestos (precioCosto, iva) {
     
-    this.precioFinal = parseFloat (precioCosto * iva); 
+    precioFinal = parseFloat (precioCosto * iva); 
     console.log (precioFinal);
     
 }
 Impuestos (175, 1.21);
 
 //
-
 function stockTotal(stock, vendido,) {
-    
-    this.total = parseInt (stock - vendido);
+
+    total = parseInt (stock - vendido);
     
     if (total < 0) {
         console.log ("Stock Agotado.")
@@ -78,13 +77,14 @@ function stockTotal(stock, vendido,) {
     
     
 }
-stockTotal (5, 0);
 
-//
+stockTotal (5, 2);
+
+
 
 function Descript(detalles, productor,) {
 
-    this.caract = detalles + productor;
+    caract = detalles + productor;
 
     console.log(caract);   
     
