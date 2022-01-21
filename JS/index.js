@@ -64,21 +64,21 @@ Impuestos (175, 1.21);
 //
 function stockTotal(stock, vendido,) {
 
-    total = parseInt (stock - vendido);
+    total = parseInt (stock - vendido);    
     
-    if (total < 0) {
-        console.log ("Stock Agotado.")
-        console.log ("Stock disponible: " + stock + " Unidades");
-    } else if (total >= 0) {
+    if (total >= 0) {
         console.log ("Producto Agregado");
         console.log ("Agregaste: " + vendido + " productos."); 
         console.log ("Quedan " + total + " productos.");       
-    }
-    
-    
+    }else if (total < 0) {
+        console.log("Stock Agotado.")
+        console.log ("stock disponible: " + stock)        
+    }    
 }
 
-stockTotal (5, 2);
+let vendido = Number (prompt("Ingrese un numero"))
+let stock = 5;
+stockTotal (stock, vendido);
 
 
 
