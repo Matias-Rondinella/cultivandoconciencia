@@ -1,8 +1,6 @@
 /*CICLO CON WHILE Y PARSEADO DE STRING A ENTERO*/
 
-let edad = prompt("¿Que edad tienes?")
-
-edad= parseInt(edad)
+let edad = Number (prompt("¿Que edad tienes?"));
 
 console.log (edad)
 
