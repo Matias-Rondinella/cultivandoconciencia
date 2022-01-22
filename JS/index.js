@@ -51,7 +51,8 @@ console.log (correoUsu);
 } */
 
 
-//
+// FUNCIONES //
+
 // Funcion para controlar stock
 function stockTotal(stock, vendido,) {
 
